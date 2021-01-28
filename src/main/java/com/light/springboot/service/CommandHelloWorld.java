@@ -26,7 +26,7 @@ public class CommandHelloWorld  implements FactoryBean {
 
     @Override
     public Class<?> getObjectType() {
-        System.out.println("getObjectType");
+        //System.out.println("getObjectType");
         return String.class;
     }
 

@@ -1,42 +1,931 @@
-2020-03-30 21:53:17.370  INFO 3616 --- [main] com.light.springboot.DepartmentTest      : Starting DepartmentTest on LAPTOP-46P30QN8 with PID 3616 (started by wangyuling in D:\QDHL\springbootDemo)
-2020-03-30 21:53:17.370  INFO 3616 --- [main] com.light.springboot.DepartmentTest      : No active profile set, falling back to default profiles: default
-2020-03-30 21:53:17.590  INFO 3616 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@71238fc2: startup date [Mon Mar 30 21:53:17 CST 2020]; root of context hierarchy
-2020-03-30 21:53:18.176  INFO 3616 --- [main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [disconf.xml]
-2020-03-30 21:53:18.370  WARN 3616 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.light.springboot]' package. Please check your configuration.
-2020-03-30 21:53:18.410  INFO 3616 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2020-03-30 21:53:18.509  WARN 3616 --- [main] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'myBatisConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
-2020-03-30 21:53:18.772  INFO 3616 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2020-03-30 21:53:20.184  INFO 3616 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@71238fc2: startup date [Mon Mar 30 21:53:17 CST 2020]; root of context hierarchy
-2020-03-30 21:53:20.264  INFO 3616 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/helloworld],methods=[GET]}" onto public java.lang.String com.light.springboot.controller.TestController.helloworld()
-2020-03-30 21:53:20.264  INFO 3616 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/thymeleaf/hello]}" onto public java.lang.String com.light.springboot.controller.ThymeleafController.hello(java.util.Map<java.lang.String, java.lang.Object>)
-2020-03-30 21:53:20.264  INFO 3616 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/thymeleaf/Upfild]}" onto public void com.light.springboot.controller.ThymeleafController.Upfild(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2020-03-30 21:53:20.274  INFO 3616 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2020-03-30 21:53:20.274  INFO 3616 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2020-03-30 21:53:20.314  INFO 3616 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2020-03-30 21:53:20.314  INFO 3616 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2020-03-30 21:53:20.324  INFO 3616 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in globalDefaultExceptionHandler
-2020-03-30 21:53:20.350  INFO 3616 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2020-03-30 21:53:20.976  INFO 3616 --- [main] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
-2020-03-30 21:53:20.997  INFO 3616 --- [main] com.light.springboot.DepartmentTest      : Started DepartmentTest in 4.046 seconds (JVM running for 5.656)
-2020-03-30 21:53:21.056  INFO 3616 --- [Thread-5] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@71238fc2: startup date [Mon Mar 30 21:53:17 CST 2020]; root of context hierarchy
-2020-03-30 21:53:32.083  INFO 14056 --- [main] com.light.springboot.DepartmentTest      : Starting DepartmentTest on LAPTOP-46P30QN8 with PID 14056 (started by wangyuling in D:\QDHL\springbootDemo)
-2020-03-30 21:53:32.083  INFO 14056 --- [main] com.light.springboot.DepartmentTest      : No active profile set, falling back to default profiles: default
-2020-03-30 21:53:32.283  INFO 14056 --- [main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@71238fc2: startup date [Mon Mar 30 21:53:32 CST 2020]; root of context hierarchy
-2020-03-30 21:53:32.884  INFO 14056 --- [main] o.s.b.f.xml.XmlBeanDefinitionReader      : Loading XML bean definitions from class path resource [disconf.xml]
-2020-03-30 21:53:33.049  WARN 14056 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.light.springboot]' package. Please check your configuration.
-2020-03-30 21:53:33.084  INFO 14056 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
-2020-03-30 21:53:33.196  WARN 14056 --- [main] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'myBatisConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
-2020-03-30 21:53:33.426  INFO 14056 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
-2020-03-30 21:53:34.774  INFO 14056 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@71238fc2: startup date [Mon Mar 30 21:53:32 CST 2020]; root of context hierarchy
-2020-03-30 21:53:34.844  INFO 14056 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/helloworld],methods=[GET]}" onto public java.lang.String com.light.springboot.controller.TestController.helloworld()
-2020-03-30 21:53:34.844  INFO 14056 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/thymeleaf/Upfild]}" onto public void com.light.springboot.controller.ThymeleafController.Upfild(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2020-03-30 21:53:34.844  INFO 14056 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/thymeleaf/hello]}" onto public java.lang.String com.light.springboot.controller.ThymeleafController.hello(java.util.Map<java.lang.String, java.lang.Object>)
-2020-03-30 21:53:34.844  INFO 14056 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2020-03-30 21:53:34.844  INFO 14056 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
-2020-03-30 21:53:34.884  INFO 14056 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2020-03-30 21:53:34.884  INFO 14056 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2020-03-30 21:53:34.894  INFO 14056 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in globalDefaultExceptionHandler
-2020-03-30 21:53:34.924  INFO 14056 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
-2020-03-30 21:53:35.545  INFO 14056 --- [main] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
-2020-03-30 21:53:35.555  INFO 14056 --- [main] com.light.springboot.DepartmentTest      : Started DepartmentTest in 3.768 seconds (JVM running for 4.644)
-2020-03-30 21:53:35.615  INFO 14056 --- [Thread-5] o.s.w.c.s.GenericWebApplicationContext   : Closing org.springframework.web.context.support.GenericWebApplicationContext@71238fc2: startup date [Mon Mar 30 21:53:32 CST 2020]; root of context hierarchy
+2021-01-14 11:44:40.793  INFO 5124 --- [restartedMain] c.l.springboot.SpringbootApplication     : Starting SpringbootApplication on LAPTOP-46P30QN8 with PID 5124 (D:\QDHL\springbootDemo\target\classes started by wangyuling in D:\QDHL\springbootDemo)
+2021-01-14 11:44:40.801  INFO 5124 --- [restartedMain] c.l.springboot.SpringbootApplication     : No active profile set, falling back to default profiles: default
+2021-01-14 11:44:40.862  INFO 5124 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-01-14 11:44:40.862  INFO 5124 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-01-14 11:44:41.440  WARN 5124 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.light.springboot]' package. Please check your configuration.
+2021-01-14 11:44:41.497  INFO 5124 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-14 11:44:41.498  INFO 5124 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2021-01-14 11:44:41.510  INFO 5124 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7ms. Found 0 Elasticsearch repository interfaces.
+2021-01-14 11:44:41.514  INFO 5124 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-14 11:44:41.514  INFO 5124 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2021-01-14 11:44:41.517  INFO 5124 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2ms. Found 0 Reactive Elasticsearch repository interfaces.
+2021-01-14 11:44:41.529  INFO 5124 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-14 11:44:41.529  INFO 5124 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-14 11:44:41.540  INFO 5124 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2ms. Found 0 Redis repository interfaces.
+2021-01-14 11:44:41.636  INFO 5124 --- [restartedMain] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'myBatisConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2021-01-14 11:44:42.155  INFO 5124 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-01-14 11:44:42.163  INFO 5124 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-14 11:44:42.163  INFO 5124 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2021-01-14 11:44:42.282  INFO 5124 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-14 11:44:42.283  INFO 5124 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1421 ms
+2021-01-14 11:44:42.331  WARN 5124 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'testController': Unsatisfied dependency expressed through field 'elasticsearchTemplate'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.data.elasticsearch.core.ElasticsearchTemplate' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2021-01-14 11:44:42.333  INFO 5124 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-01-14 11:44:42.381  INFO 5124 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-01-14 11:44:42.484 ERROR 5124 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field elasticsearchTemplate in com.light.springboot.controller.TestController required a bean of type 'org.springframework.data.elasticsearch.core.ElasticsearchTemplate' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+The following candidates were found but could not be injected:
+	- Bean method 'elasticsearchTemplate' in 'ElasticsearchDataConfiguration.TransportClientConfiguration' not loaded because @ConditionalOnBean (types: org.elasticsearch.client.Client; SearchStrategy: all) did not find any beans of type org.elasticsearch.client.Client
+
+
+Action:
+
+Consider revisiting the entries above or defining a bean of type 'org.springframework.data.elasticsearch.core.ElasticsearchTemplate' in your configuration.
+
+2021-01-14 11:49:09.592  INFO 12964 --- [restartedMain] c.l.springboot.SpringbootApplication     : Starting SpringbootApplication on LAPTOP-46P30QN8 with PID 12964 (D:\QDHL\springbootDemo\target\classes started by wangyuling in D:\QDHL\springbootDemo)
+2021-01-14 11:49:09.594  INFO 12964 --- [restartedMain] c.l.springboot.SpringbootApplication     : No active profile set, falling back to default profiles: default
+2021-01-14 11:49:09.636  INFO 12964 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-01-14 11:49:09.637  INFO 12964 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-01-14 11:49:10.174  WARN 12964 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.light.springboot]' package. Please check your configuration.
+2021-01-14 11:49:10.226  INFO 12964 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-14 11:49:10.228  INFO 12964 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2021-01-14 11:49:10.238  INFO 12964 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6ms. Found 0 Elasticsearch repository interfaces.
+2021-01-14 11:49:10.242  INFO 12964 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-14 11:49:10.243  INFO 12964 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2021-01-14 11:49:10.246  INFO 12964 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2ms. Found 0 Reactive Elasticsearch repository interfaces.
+2021-01-14 11:49:10.256  INFO 12964 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-14 11:49:10.257  INFO 12964 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-14 11:49:10.266  INFO 12964 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2ms. Found 0 Redis repository interfaces.
+2021-01-14 11:49:10.354  INFO 12964 --- [restartedMain] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'myBatisConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2021-01-14 11:49:10.823  INFO 12964 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-01-14 11:49:10.830  INFO 12964 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-14 11:49:10.830  INFO 12964 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2021-01-14 11:49:10.939  INFO 12964 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-14 11:49:10.939  INFO 12964 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1302 ms
+2021-01-14 11:49:10.987  WARN 12964 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'testController': Unsatisfied dependency expressed through field 'elasticsearchTemplate'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.data.elasticsearch.core.ElasticsearchTemplate' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2021-01-14 11:49:10.988  INFO 12964 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-01-14 11:49:10.999  INFO 12964 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-01-14 11:49:11.108 ERROR 12964 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field elasticsearchTemplate in com.light.springboot.controller.TestController required a bean of type 'org.springframework.data.elasticsearch.core.ElasticsearchTemplate' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+The following candidates were found but could not be injected:
+	- Bean method 'elasticsearchTemplate' in 'ElasticsearchDataConfiguration.TransportClientConfiguration' not loaded because @ConditionalOnBean (types: org.elasticsearch.client.Client; SearchStrategy: all) did not find any beans of type org.elasticsearch.client.Client
+
+
+Action:
+
+Consider revisiting the entries above or defining a bean of type 'org.springframework.data.elasticsearch.core.ElasticsearchTemplate' in your configuration.
+
+2021-01-14 12:30:16.725  INFO 6936 --- [restartedMain] c.l.springboot.SpringbootApplication     : Starting SpringbootApplication on LAPTOP-46P30QN8 with PID 6936 (D:\QDHL\springbootDemo\target\classes started by wangyuling in D:\QDHL\springbootDemo)
+2021-01-14 12:30:16.727  INFO 6936 --- [restartedMain] c.l.springboot.SpringbootApplication     : No active profile set, falling back to default profiles: default
+2021-01-14 12:30:16.763  INFO 6936 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-01-14 12:30:16.763  INFO 6936 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-01-14 12:30:17.231  WARN 6936 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.light.springboot]' package. Please check your configuration.
+2021-01-14 12:30:17.281  INFO 6936 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-14 12:30:17.282  INFO 6936 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2021-01-14 12:30:17.291  INFO 6936 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5ms. Found 0 Elasticsearch repository interfaces.
+2021-01-14 12:30:17.295  INFO 6936 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-14 12:30:17.296  INFO 6936 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2021-01-14 12:30:17.300  INFO 6936 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2ms. Found 0 Reactive Elasticsearch repository interfaces.
+2021-01-14 12:30:17.310  INFO 6936 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-14 12:30:17.311  INFO 6936 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-14 12:30:17.320  INFO 6936 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2ms. Found 0 Redis repository interfaces.
+2021-01-14 12:30:17.418  INFO 6936 --- [restartedMain] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'myBatisConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2021-01-14 12:30:17.886  INFO 6936 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-01-14 12:30:17.893  INFO 6936 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-14 12:30:17.893  INFO 6936 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2021-01-14 12:30:17.997  INFO 6936 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-14 12:30:17.997  INFO 6936 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1234 ms
+2021-01-14 12:30:18.455  INFO 6936 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : no modules loaded
+2021-01-14 12:30:18.456  INFO 6936 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2021-01-14 12:30:18.456  INFO 6936 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2021-01-14 12:30:18.456  INFO 6936 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2021-01-14 12:30:18.456  INFO 6936 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2021-01-14 12:30:18.456  INFO 6936 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2021-01-14 12:30:19.594  WARN 6936 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'testController': Unsatisfied dependency expressed through field 'elasticsearchTemplate'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'elasticsearchTemplate' defined in class path resource [com/light/springboot/config/elasticSearchConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.elasticsearch.core.ElasticsearchTemplate]: Factory method 'elasticsearchTemplate' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'transportClient' defined in class path resource [com/light/springboot/config/elasticSearchConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.elasticsearch.client.Client]: Factory method 'transportClient' threw exception; nested exception is java.lang.NoSuchMethodError: org.elasticsearch.plugins.ActionPlugin$ActionHandler.<init>(Lorg/elasticsearch/action/GenericAction;Ljava/lang/Class;[Ljava/lang/Class;)V
+2021-01-14 12:30:19.596  INFO 6936 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-01-14 12:30:19.606  INFO 6936 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-01-14 12:30:19.611 ERROR 6936 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call a method that does not exist. The attempt was made from the following location:
+
+    org.elasticsearch.index.reindex.ReindexPlugin.getActions(ReindexPlugin.java:60)
+
+The following method did not exist:
+
+    org.elasticsearch.plugins.ActionPlugin$ActionHandler.<init>(Lorg/elasticsearch/action/GenericAction;Ljava/lang/Class;[Ljava/lang/Class;)V
+
+The method's class, org.elasticsearch.plugins.ActionPlugin$ActionHandler, is available from the following locations:
+
+    jar:file:/D:/.m2/org/elasticsearch/elasticsearch/7.6.0/elasticsearch-7.6.0.jar!/org/elasticsearch/plugins/ActionPlugin$ActionHandler.class
+
+It was loaded from the following location:
+
+    file:/D:/.m2/org/elasticsearch/elasticsearch/7.6.0/elasticsearch-7.6.0.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains a single, compatible version of org.elasticsearch.plugins.ActionPlugin$ActionHandler
+
+2021-01-14 12:34:11.700  INFO 15428 --- [restartedMain] c.l.springboot.SpringbootApplication     : Starting SpringbootApplication on LAPTOP-46P30QN8 with PID 15428 (D:\QDHL\springbootDemo\target\classes started by wangyuling in D:\QDHL\springbootDemo)
+2021-01-14 12:34:11.702  INFO 15428 --- [restartedMain] c.l.springboot.SpringbootApplication     : No active profile set, falling back to default profiles: default
+2021-01-14 12:34:11.741  INFO 15428 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-01-14 12:34:11.741  INFO 15428 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-01-14 12:34:12.231  WARN 15428 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.light.springboot]' package. Please check your configuration.
+2021-01-14 12:34:12.278  INFO 15428 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-14 12:34:12.280  INFO 15428 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2021-01-14 12:34:12.289  INFO 15428 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6ms. Found 0 Elasticsearch repository interfaces.
+2021-01-14 12:34:12.299  INFO 15428 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-14 12:34:12.300  INFO 15428 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-14 12:34:12.309  INFO 15428 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2ms. Found 0 Redis repository interfaces.
+2021-01-14 12:34:12.400  INFO 15428 --- [restartedMain] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'myBatisConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2021-01-14 12:34:12.855  INFO 15428 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-01-14 12:34:12.862  INFO 15428 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-14 12:34:12.862  INFO 15428 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2021-01-14 12:34:12.963  INFO 15428 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-14 12:34:12.963  INFO 15428 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1221 ms
+2021-01-14 12:34:13.015  WARN 15428 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'testController': Unsatisfied dependency expressed through field 'elasticsearchTemplate'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'elasticsearchTemplate' defined in class path resource [com/light/springboot/config/elasticSearchConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.elasticsearch.core.ElasticsearchTemplate]: Factory method 'elasticsearchTemplate' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'transportClient' defined in class path resource [com/light/springboot/config/elasticSearchConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.elasticsearch.client.Client]: Factory method 'transportClient' threw exception; nested exception is java.lang.NoSuchMethodError: org.elasticsearch.client.transport.TransportClient.builder()Lorg/elasticsearch/client/transport/TransportClient$Builder;
+2021-01-14 12:34:13.017  INFO 15428 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-01-14 12:34:13.027  INFO 15428 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-01-14 12:34:13.032 ERROR 15428 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call a method that does not exist. The attempt was made from the following location:
+
+    org.springframework.data.elasticsearch.client.TransportClientFactoryBean.buildClient(TransportClientFactoryBean.java:89)
+
+The following method did not exist:
+
+    org.elasticsearch.client.transport.TransportClient.builder()Lorg/elasticsearch/client/transport/TransportClient$Builder;
+
+The method's class, org.elasticsearch.client.transport.TransportClient, is available from the following locations:
+
+    jar:file:/D:/.m2/org/elasticsearch/elasticsearch/7.6.0/elasticsearch-7.6.0.jar!/org/elasticsearch/client/transport/TransportClient.class
+
+It was loaded from the following location:
+
+    file:/D:/.m2/org/elasticsearch/elasticsearch/7.6.0/elasticsearch-7.6.0.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains a single, compatible version of org.elasticsearch.client.transport.TransportClient
+
+2021-01-14 12:35:30.834  INFO 13272 --- [restartedMain] c.l.springboot.SpringbootApplication     : Starting SpringbootApplication on LAPTOP-46P30QN8 with PID 13272 (D:\QDHL\springbootDemo\target\classes started by wangyuling in D:\QDHL\springbootDemo)
+2021-01-14 12:35:30.837  INFO 13272 --- [restartedMain] c.l.springboot.SpringbootApplication     : No active profile set, falling back to default profiles: default
+2021-01-14 12:35:30.878  INFO 13272 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-01-14 12:35:30.878  INFO 13272 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-01-14 12:35:31.348  WARN 13272 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.light.springboot]' package. Please check your configuration.
+2021-01-14 12:35:31.393  INFO 13272 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-14 12:35:31.394  INFO 13272 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2021-01-14 12:35:31.405  INFO 13272 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6ms. Found 0 Elasticsearch repository interfaces.
+2021-01-14 12:35:31.416  INFO 13272 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-14 12:35:31.416  INFO 13272 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-14 12:35:31.428  INFO 13272 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2ms. Found 0 Redis repository interfaces.
+2021-01-14 12:35:31.526  INFO 13272 --- [restartedMain] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'myBatisConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2021-01-14 12:35:31.972  INFO 13272 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-01-14 12:35:31.979  INFO 13272 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-14 12:35:31.979  INFO 13272 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2021-01-14 12:35:32.080  INFO 13272 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-14 12:35:32.081  INFO 13272 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1203 ms
+2021-01-14 12:35:32.133  WARN 13272 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'testController': Unsatisfied dependency expressed through field 'elasticsearchTemplate'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'elasticsearchTemplate' defined in class path resource [com/light/springboot/config/elasticSearchConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.data.elasticsearch.core.ElasticsearchTemplate]: Factory method 'elasticsearchTemplate' threw exception; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'transportClient' defined in class path resource [com/light/springboot/config/elasticSearchConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.elasticsearch.client.Client]: Factory method 'transportClient' threw exception; nested exception is java.lang.NoSuchMethodError: org.elasticsearch.client.transport.TransportClient.builder()Lorg/elasticsearch/client/transport/TransportClient$Builder;
+2021-01-14 12:35:32.135  INFO 13272 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-01-14 12:35:32.153  INFO 13272 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-01-14 12:35:32.158 ERROR 13272 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+An attempt was made to call a method that does not exist. The attempt was made from the following location:
+
+    org.springframework.data.elasticsearch.client.TransportClientFactoryBean.buildClient(TransportClientFactoryBean.java:89)
+
+The following method did not exist:
+
+    org.elasticsearch.client.transport.TransportClient.builder()Lorg/elasticsearch/client/transport/TransportClient$Builder;
+
+The method's class, org.elasticsearch.client.transport.TransportClient, is available from the following locations:
+
+    jar:file:/D:/.m2/org/elasticsearch/elasticsearch/6.8.12/elasticsearch-6.8.12.jar!/org/elasticsearch/client/transport/TransportClient.class
+
+It was loaded from the following location:
+
+    file:/D:/.m2/org/elasticsearch/elasticsearch/6.8.12/elasticsearch-6.8.12.jar
+
+
+Action:
+
+Correct the classpath of your application so that it contains a single, compatible version of org.elasticsearch.client.transport.TransportClient
+
+2021-01-14 17:09:26.673  INFO 15860 --- [restartedMain] c.l.springboot.SpringbootApplication     : Starting SpringbootApplication on LAPTOP-46P30QN8 with PID 15860 (D:\QDHL\springbootDemo\target\classes started by wangyuling in D:\QDHL\springbootDemo)
+2021-01-14 17:09:26.676  INFO 15860 --- [restartedMain] c.l.springboot.SpringbootApplication     : No active profile set, falling back to default profiles: default
+2021-01-14 17:09:26.714  INFO 15860 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-01-14 17:09:26.714  INFO 15860 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-01-14 17:09:27.199  WARN 15860 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.light.springboot]' package. Please check your configuration.
+2021-01-14 17:09:27.244  INFO 15860 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-14 17:09:27.246  INFO 15860 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2021-01-14 17:09:27.255  INFO 15860 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5ms. Found 0 Elasticsearch repository interfaces.
+2021-01-14 17:09:27.258  INFO 15860 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-14 17:09:27.259  INFO 15860 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2021-01-14 17:09:27.261  INFO 15860 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2ms. Found 0 Reactive Elasticsearch repository interfaces.
+2021-01-14 17:09:27.270  INFO 15860 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-14 17:09:27.271  INFO 15860 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-14 17:09:27.280  INFO 15860 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2ms. Found 0 Redis repository interfaces.
+2021-01-14 17:09:27.361  INFO 15860 --- [restartedMain] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'myBatisConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2021-01-14 17:09:27.857  INFO 15860 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-01-14 17:09:27.864  INFO 15860 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-14 17:09:27.864  INFO 15860 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2021-01-14 17:09:27.966  INFO 15860 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-14 17:09:27.966  INFO 15860 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1252 ms
+2021-01-14 17:09:28.386  INFO 15860 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : no modules loaded
+2021-01-14 17:09:28.387  INFO 15860 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2021-01-14 17:09:28.387  INFO 15860 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2021-01-14 17:09:28.387  INFO 15860 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2021-01-14 17:09:28.387  INFO 15860 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2021-01-14 17:09:28.387  INFO 15860 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2021-01-14 17:09:29.569  INFO 15860 --- [restartedMain] o.s.d.e.c.TransportClientFactoryBean     : Adding transport node : 127.0.0.1:9300
+2021-01-14 17:09:30.917  INFO 15860 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-14 17:09:31.122  WARN 15860 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-01-14 17:09:31.753  INFO 15860 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-01-14 17:09:31.786  INFO 15860 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-01-14 17:09:31.788  INFO 15860 --- [restartedMain] c.l.springboot.SpringbootApplication     : Started SpringbootApplication in 5.511 seconds (JVM running for 6.423)
+2021-01-14 17:10:42.521  INFO 20016 --- [restartedMain] c.l.springboot.SpringbootApplication     : Starting SpringbootApplication on LAPTOP-46P30QN8 with PID 20016 (D:\QDHL\springbootDemo\target\classes started by wangyuling in D:\QDHL\springbootDemo)
+2021-01-14 17:10:42.523  INFO 20016 --- [restartedMain] c.l.springboot.SpringbootApplication     : No active profile set, falling back to default profiles: default
+2021-01-14 17:10:42.557  INFO 20016 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-01-14 17:10:42.557  INFO 20016 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-01-14 17:10:43.046  WARN 20016 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.light.springboot]' package. Please check your configuration.
+2021-01-14 17:10:43.088  INFO 20016 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-14 17:10:43.090  INFO 20016 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2021-01-14 17:10:43.099  INFO 20016 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5ms. Found 0 Elasticsearch repository interfaces.
+2021-01-14 17:10:43.102  INFO 20016 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-14 17:10:43.102  INFO 20016 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2021-01-14 17:10:43.105  INFO 20016 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2ms. Found 0 Reactive Elasticsearch repository interfaces.
+2021-01-14 17:10:43.115  INFO 20016 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-14 17:10:43.115  INFO 20016 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-14 17:10:43.124  INFO 20016 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2ms. Found 0 Redis repository interfaces.
+2021-01-14 17:10:43.199  INFO 20016 --- [restartedMain] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'myBatisConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2021-01-14 17:10:43.665  INFO 20016 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-01-14 17:10:43.671  INFO 20016 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-14 17:10:43.672  INFO 20016 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2021-01-14 17:10:43.777  INFO 20016 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-14 17:10:43.778  INFO 20016 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1220 ms
+2021-01-14 17:10:44.217  INFO 20016 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : no modules loaded
+2021-01-14 17:10:44.218  INFO 20016 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2021-01-14 17:10:44.218  INFO 20016 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2021-01-14 17:10:44.218  INFO 20016 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2021-01-14 17:10:44.218  INFO 20016 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2021-01-14 17:10:44.218  INFO 20016 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2021-01-14 17:10:45.282  INFO 20016 --- [restartedMain] o.s.d.e.c.TransportClientFactoryBean     : Adding transport node : 127.0.0.1:9300
+2021-01-14 17:10:46.490  INFO 20016 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-14 17:10:46.807  WARN 20016 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-01-14 17:10:47.521  INFO 20016 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-01-14 17:10:47.557  INFO 20016 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-01-14 17:10:47.559  INFO 20016 --- [restartedMain] c.l.springboot.SpringbootApplication     : Started SpringbootApplication in 5.384 seconds (JVM running for 6.291)
+2021-01-14 17:17:39.095  INFO 20016 --- [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-14 17:17:39.095  INFO 20016 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-14 17:17:39.109  INFO 20016 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2021-01-14 17:18:46.374  INFO 2248 --- [restartedMain] c.l.springboot.SpringbootApplication     : Starting SpringbootApplication on LAPTOP-46P30QN8 with PID 2248 (D:\QDHL\springbootDemo\target\classes started by wangyuling in D:\QDHL\springbootDemo)
+2021-01-14 17:18:46.376  INFO 2248 --- [restartedMain] c.l.springboot.SpringbootApplication     : No active profile set, falling back to default profiles: default
+2021-01-14 17:18:46.416  INFO 2248 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-01-14 17:18:46.416  INFO 2248 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-01-14 17:18:46.900  WARN 2248 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.light.springboot]' package. Please check your configuration.
+2021-01-14 17:18:46.945  INFO 2248 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-14 17:18:46.947  INFO 2248 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2021-01-14 17:18:46.957  INFO 2248 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6ms. Found 0 Elasticsearch repository interfaces.
+2021-01-14 17:18:46.961  INFO 2248 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-14 17:18:46.962  INFO 2248 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2021-01-14 17:18:46.965  INFO 2248 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3ms. Found 0 Reactive Elasticsearch repository interfaces.
+2021-01-14 17:18:46.975  INFO 2248 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-14 17:18:46.975  INFO 2248 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-14 17:18:46.985  INFO 2248 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2ms. Found 0 Redis repository interfaces.
+2021-01-14 17:18:47.082  INFO 2248 --- [restartedMain] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'myBatisConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2021-01-14 17:18:47.559  INFO 2248 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-01-14 17:18:47.565  INFO 2248 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-14 17:18:47.565  INFO 2248 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2021-01-14 17:18:47.674  INFO 2248 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-14 17:18:47.674  INFO 2248 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1258 ms
+2021-01-14 17:18:48.104  INFO 2248 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : no modules loaded
+2021-01-14 17:18:48.104  INFO 2248 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2021-01-14 17:18:48.104  INFO 2248 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2021-01-14 17:18:48.104  INFO 2248 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2021-01-14 17:18:48.104  INFO 2248 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2021-01-14 17:18:48.104  INFO 2248 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2021-01-14 17:18:49.140  INFO 2248 --- [restartedMain] o.s.d.e.c.TransportClientFactoryBean     : Adding transport node : 127.0.0.1:9300
+2021-01-14 17:18:52.279  INFO 2248 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-14 17:18:52.380  WARN 2248 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-01-14 17:18:53.116  INFO 2248 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-01-14 17:18:53.145  INFO 2248 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-01-14 17:18:53.147  INFO 2248 --- [restartedMain] c.l.springboot.SpringbootApplication     : Started SpringbootApplication in 7.097 seconds (JVM running for 8.104)
+2021-01-14 17:20:24.962  INFO 2248 --- [Thread-20] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-14 17:20:26.386  INFO 2248 --- [restartedMain] c.l.springboot.SpringbootApplication     : Starting SpringbootApplication on LAPTOP-46P30QN8 with PID 2248 (D:\QDHL\springbootDemo\target\classes started by wangyuling in D:\QDHL\springbootDemo)
+2021-01-14 17:20:26.386  INFO 2248 --- [restartedMain] c.l.springboot.SpringbootApplication     : No active profile set, falling back to default profiles: default
+2021-01-14 17:20:26.521  WARN 2248 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.light.springboot]' package. Please check your configuration.
+2021-01-14 17:20:26.530  INFO 2248 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-14 17:20:26.530  INFO 2248 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2021-01-14 17:20:26.532  INFO 2248 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2ms. Found 0 Elasticsearch repository interfaces.
+2021-01-14 17:20:26.533  INFO 2248 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-14 17:20:26.534  INFO 2248 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2021-01-14 17:20:26.535  INFO 2248 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2ms. Found 0 Reactive Elasticsearch repository interfaces.
+2021-01-14 17:20:26.537  INFO 2248 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-14 17:20:26.538  INFO 2248 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-14 17:20:26.540  INFO 2248 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2ms. Found 0 Redis repository interfaces.
+2021-01-14 17:20:26.562  INFO 2248 --- [restartedMain] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'myBatisConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2021-01-14 17:20:26.697  INFO 2248 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-01-14 17:20:26.697  INFO 2248 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-14 17:20:26.697  INFO 2248 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2021-01-14 17:20:26.727  INFO 2248 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-14 17:20:26.727  INFO 2248 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 338 ms
+2021-01-14 17:20:26.772  INFO 2248 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : no modules loaded
+2021-01-14 17:20:26.772  INFO 2248 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2021-01-14 17:20:26.772  INFO 2248 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2021-01-14 17:20:26.772  INFO 2248 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2021-01-14 17:20:26.772  INFO 2248 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2021-01-14 17:20:26.772  INFO 2248 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2021-01-14 17:20:26.785  INFO 2248 --- [restartedMain] o.s.d.e.c.TransportClientFactoryBean     : Adding transport node : 127.0.0.1:9300
+2021-01-14 17:20:26.934  INFO 2248 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-14 17:20:26.975  WARN 2248 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-01-14 17:20:27.094  INFO 2248 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-01-14 17:20:27.106  INFO 2248 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-01-14 17:20:27.107  INFO 2248 --- [restartedMain] c.l.springboot.SpringbootApplication     : Started SpringbootApplication in 0.746 seconds (JVM running for 102.064)
+2021-01-14 17:20:27.108  INFO 2248 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-01-14 17:23:21.269  INFO 2248 --- [Thread-27] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-14 17:23:22.774  INFO 2248 --- [restartedMain] c.l.springboot.SpringbootApplication     : Starting SpringbootApplication on LAPTOP-46P30QN8 with PID 2248 (D:\QDHL\springbootDemo\target\classes started by wangyuling in D:\QDHL\springbootDemo)
+2021-01-14 17:23:22.774  INFO 2248 --- [restartedMain] c.l.springboot.SpringbootApplication     : No active profile set, falling back to default profiles: default
+2021-01-14 17:23:22.893  WARN 2248 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.light.springboot]' package. Please check your configuration.
+2021-01-14 17:23:22.903  INFO 2248 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-14 17:23:22.903  INFO 2248 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2021-01-14 17:23:22.904  INFO 2248 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0ms. Found 0 Elasticsearch repository interfaces.
+2021-01-14 17:23:22.905  INFO 2248 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-14 17:23:22.905  INFO 2248 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2021-01-14 17:23:22.905  INFO 2248 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0ms. Found 0 Reactive Elasticsearch repository interfaces.
+2021-01-14 17:23:22.908  INFO 2248 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-14 17:23:22.908  INFO 2248 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-14 17:23:22.911  INFO 2248 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3ms. Found 0 Redis repository interfaces.
+2021-01-14 17:23:23.041  INFO 2248 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-01-14 17:23:23.042  INFO 2248 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-14 17:23:23.042  INFO 2248 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2021-01-14 17:23:23.071  INFO 2248 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-14 17:23:23.071  INFO 2248 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 294 ms
+2021-01-14 17:23:23.134  INFO 2248 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-14 17:23:23.163  WARN 2248 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-01-14 17:23:23.199  WARN 2248 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\QDHL\springbootDemo\target\classes\mybatis\mapper\departmentMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.light.springboot.vo.Department'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.light.springboot.vo.Department
+2021-01-14 17:23:23.199  INFO 2248 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-14 17:23:23.199  INFO 2248 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-01-14 17:23:23.204  INFO 2248 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-01-14 17:23:23.214 ERROR 2248 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\QDHL\springbootDemo\target\classes\mybatis\mapper\departmentMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.light.springboot.vo.Department'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.light.springboot.vo.Department
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:656) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:636) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1338) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1177) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:557) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:882) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878) ~[spring-context-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747) [spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) [spring-boot-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at com.light.springboot.SpringbootApplication.main(SpringbootApplication.java:15) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_191]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_191]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_191]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_191]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\QDHL\springbootDemo\target\classes\mybatis\mapper\departmentMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.light.springboot.vo.Department'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.light.springboot.vo.Department
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:651) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	... 24 common frames omitted
+Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\QDHL\springbootDemo\target\classes\mybatis\mapper\departmentMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.light.springboot.vo.Department'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.light.springboot.vo.Department
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:523) ~[mybatis-spring-1.3.1.jar:1.3.1]
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:380) ~[mybatis-spring-1.3.1.jar:1.3.1]
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:547) ~[mybatis-spring-1.3.1.jar:1.3.1]
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.sqlSessionFactory(MybatisAutoConfiguration.java:139) ~[mybatis-spring-boot-autoconfigure-1.2.0.jar:1.2.0]
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$bac80ee0.CGLIB$sqlSessionFactory$0(<generated>) ~[mybatis-spring-boot-autoconfigure-1.2.0.jar:1.2.0]
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$bac80ee0$$FastClassBySpringCGLIB$$4a771a42.invoke(<generated>) ~[mybatis-spring-boot-autoconfigure-1.2.0.jar:1.2.0]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244) ~[spring-core-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331) ~[spring-context-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$bac80ee0.sqlSessionFactory(<generated>) ~[mybatis-spring-boot-autoconfigure-1.2.0.jar:1.2.0]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_191]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_191]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_191]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_191]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	... 25 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.light.springboot.vo.Department'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.light.springboot.vo.Department
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:120) ~[mybatis-3.4.4.jar:3.4.4]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:92) ~[mybatis-3.4.4.jar:3.4.4]
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:521) ~[mybatis-spring-1.3.1.jar:1.3.1]
+	... 38 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.light.springboot.vo.Department'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.light.springboot.vo.Department
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:118) ~[mybatis-3.4.4.jar:3.4.4]
+	at org.apache.ibatis.builder.xml.XMLStatementBuilder.parseStatementNode(XMLStatementBuilder.java:68) ~[mybatis-3.4.4.jar:3.4.4]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:135) ~[mybatis-3.4.4.jar:3.4.4]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:128) ~[mybatis-3.4.4.jar:3.4.4]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:118) ~[mybatis-3.4.4.jar:3.4.4]
+	... 40 common frames omitted
+Caused by: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.light.springboot.vo.Department'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.light.springboot.vo.Department
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:120) ~[mybatis-3.4.4.jar:3.4.4]
+	at org.apache.ibatis.builder.BaseBuilder.resolveAlias(BaseBuilder.java:149) ~[mybatis-3.4.4.jar:3.4.4]
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:116) ~[mybatis-3.4.4.jar:3.4.4]
+	... 44 common frames omitted
+Caused by: java.lang.ClassNotFoundException: Cannot find class: com.light.springboot.vo.Department
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:200) ~[mybatis-3.4.4.jar:3.4.4]
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89) ~[mybatis-3.4.4.jar:3.4.4]
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:261) ~[mybatis-3.4.4.jar:3.4.4]
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:116) ~[mybatis-3.4.4.jar:3.4.4]
+	... 46 common frames omitted
+
+2021-01-14 17:25:26.913  INFO 2248 --- [restartedMain] c.l.springboot.SpringbootApplication     : Starting SpringbootApplication on LAPTOP-46P30QN8 with PID 2248 (D:\QDHL\springbootDemo\target\classes started by wangyuling in D:\QDHL\springbootDemo)
+2021-01-14 17:25:26.914  INFO 2248 --- [restartedMain] c.l.springboot.SpringbootApplication     : No active profile set, falling back to default profiles: default
+2021-01-14 17:25:27.072  WARN 2248 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.light.springboot]' package. Please check your configuration.
+2021-01-14 17:25:27.080  INFO 2248 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-14 17:25:27.081  INFO 2248 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2021-01-14 17:25:27.083  INFO 2248 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2ms. Found 0 Elasticsearch repository interfaces.
+2021-01-14 17:25:27.084  INFO 2248 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-14 17:25:27.084  INFO 2248 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2021-01-14 17:25:27.087  INFO 2248 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2ms. Found 0 Reactive Elasticsearch repository interfaces.
+2021-01-14 17:25:27.089  INFO 2248 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-14 17:25:27.090  INFO 2248 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-14 17:25:27.092  INFO 2248 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2ms. Found 0 Redis repository interfaces.
+2021-01-14 17:25:27.118  WARN 2248 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.light.springboot.mapper]' package. Please check your configuration.
+2021-01-14 17:25:27.118  INFO 2248 --- [restartedMain] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'myBatisConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2021-01-14 17:25:27.261  INFO 2248 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-01-14 17:25:27.261  INFO 2248 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-14 17:25:27.261  INFO 2248 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2021-01-14 17:25:27.290  INFO 2248 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2021-01-14 17:25:27.290  INFO 2248 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 374 ms
+2021-01-14 17:25:27.330  INFO 2248 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : no modules loaded
+2021-01-14 17:25:27.331  INFO 2248 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2021-01-14 17:25:27.331  INFO 2248 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2021-01-14 17:25:27.331  INFO 2248 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2021-01-14 17:25:27.331  INFO 2248 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2021-01-14 17:25:27.331  INFO 2248 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2021-01-14 17:25:27.349  INFO 2248 --- [restartedMain] o.s.d.e.c.TransportClientFactoryBean     : Adding transport node : 127.0.0.1:9300
+2021-01-14 17:25:27.522  INFO 2248 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-14 17:25:27.574  WARN 2248 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-01-14 17:25:27.712  INFO 2248 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-01-14 17:25:27.724  INFO 2248 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-01-14 17:25:27.724  INFO 2248 --- [restartedMain] c.l.springboot.SpringbootApplication     : Started SpringbootApplication in 0.848 seconds (JVM running for 402.682)
+2021-01-14 17:25:27.725  INFO 2248 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-01-14 17:35:08.864  INFO 10704 --- [restartedMain] c.l.springboot.SpringbootApplication     : Starting SpringbootApplication on LAPTOP-46P30QN8 with PID 10704 (D:\QDHL\springbootDemo\target\classes started by wangyuling in D:\QDHL\springbootDemo)
+2021-01-14 17:35:08.867  INFO 10704 --- [restartedMain] c.l.springboot.SpringbootApplication     : No active profile set, falling back to default profiles: default
+2021-01-14 17:35:08.909  INFO 10704 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-01-14 17:35:08.909  INFO 10704 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-01-14 17:35:09.393  INFO 10704 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-14 17:35:09.393  INFO 10704 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2021-01-14 17:35:09.402  INFO 10704 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5ms. Found 0 Elasticsearch repository interfaces.
+2021-01-14 17:35:09.513  WARN 10704 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.light.springboot]' package. Please check your configuration.
+2021-01-14 17:35:09.557  INFO 10704 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-14 17:35:09.557  INFO 10704 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2021-01-14 17:35:09.560  INFO 10704 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3ms. Found 0 Elasticsearch repository interfaces.
+2021-01-14 17:35:09.564  INFO 10704 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-14 17:35:09.565  INFO 10704 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2021-01-14 17:35:09.568  INFO 10704 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2ms. Found 0 Reactive Elasticsearch repository interfaces.
+2021-01-14 17:35:09.584  INFO 10704 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-14 17:35:09.586  INFO 10704 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-14 17:35:09.596  INFO 10704 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2ms. Found 0 Redis repository interfaces.
+2021-01-14 17:35:09.711  INFO 10704 --- [restartedMain] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'myBatisConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2021-01-14 17:35:10.250  INFO 10704 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-01-14 17:35:10.258  INFO 10704 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-14 17:35:10.258  INFO 10704 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2021-01-14 17:35:10.418  INFO 10704 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-14 17:35:10.418  INFO 10704 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1509 ms
+2021-01-14 17:35:10.818  INFO 10704 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : no modules loaded
+2021-01-14 17:35:10.819  INFO 10704 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2021-01-14 17:35:10.819  INFO 10704 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2021-01-14 17:35:10.819  INFO 10704 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2021-01-14 17:35:10.819  INFO 10704 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2021-01-14 17:35:10.819  INFO 10704 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2021-01-14 17:35:12.060  INFO 10704 --- [restartedMain] o.s.d.e.c.TransportClientFactoryBean     : Adding transport node : 127.0.0.1:9300
+2021-01-14 17:35:13.641  INFO 10704 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-14 17:35:13.762  WARN 10704 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-01-14 17:35:14.409  INFO 10704 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-01-14 17:35:14.444  INFO 10704 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-01-14 17:35:14.446  INFO 10704 --- [restartedMain] c.l.springboot.SpringbootApplication     : Started SpringbootApplication in 6.025 seconds (JVM running for 7.108)
+2021-01-14 17:35:23.939  INFO 10704 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-14 17:35:23.940  INFO 10704 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-14 17:35:23.950  INFO 10704 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2021-01-14 17:50:26.489  INFO 10704 --- [Thread-18] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-14 17:50:27.951  INFO 10704 --- [restartedMain] c.l.springboot.SpringbootApplication     : Starting SpringbootApplication on LAPTOP-46P30QN8 with PID 10704 (D:\QDHL\springbootDemo\target\classes started by wangyuling in D:\QDHL\springbootDemo)
+2021-01-14 17:50:27.951  INFO 10704 --- [restartedMain] c.l.springboot.SpringbootApplication     : No active profile set, falling back to default profiles: default
+2021-01-14 17:50:28.100  INFO 10704 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-14 17:50:28.100  INFO 10704 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2021-01-14 17:50:28.101  INFO 10704 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0ms. Found 0 Elasticsearch repository interfaces.
+2021-01-14 17:50:28.126  WARN 10704 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.light.springboot]' package. Please check your configuration.
+2021-01-14 17:50:28.137  INFO 10704 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-14 17:50:28.137  INFO 10704 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2021-01-14 17:50:28.140  INFO 10704 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2ms. Found 0 Elasticsearch repository interfaces.
+2021-01-14 17:50:28.141  INFO 10704 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-14 17:50:28.142  INFO 10704 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2021-01-14 17:50:28.144  INFO 10704 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2ms. Found 0 Reactive Elasticsearch repository interfaces.
+2021-01-14 17:50:28.148  INFO 10704 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-14 17:50:28.148  INFO 10704 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-14 17:50:28.151  INFO 10704 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2ms. Found 0 Redis repository interfaces.
+2021-01-14 17:50:28.180  INFO 10704 --- [restartedMain] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'myBatisConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2021-01-14 17:50:28.325  INFO 10704 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-01-14 17:50:28.325  INFO 10704 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-14 17:50:28.326  INFO 10704 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2021-01-14 17:50:28.356  INFO 10704 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-14 17:50:28.356  INFO 10704 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 401 ms
+2021-01-14 17:50:28.381  INFO 10704 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : no modules loaded
+2021-01-14 17:50:28.381  INFO 10704 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2021-01-14 17:50:28.382  INFO 10704 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2021-01-14 17:50:28.382  INFO 10704 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2021-01-14 17:50:28.382  INFO 10704 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2021-01-14 17:50:28.382  INFO 10704 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2021-01-14 17:50:28.398  INFO 10704 --- [restartedMain] o.s.d.e.c.TransportClientFactoryBean     : Adding transport node : 127.0.0.1:9300
+2021-01-14 17:50:28.615  INFO 10704 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-14 17:50:28.659  WARN 10704 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-01-14 17:50:28.797  INFO 10704 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-01-14 17:50:28.809  INFO 10704 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-01-14 17:50:28.809  INFO 10704 --- [restartedMain] c.l.springboot.SpringbootApplication     : Started SpringbootApplication in 0.885 seconds (JVM running for 921.471)
+2021-01-14 17:50:28.811  INFO 10704 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-01-14 17:50:31.285  INFO 10704 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-14 17:50:31.286  INFO 10704 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-14 17:50:31.295  INFO 10704 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2021-01-14 17:51:33.723  INFO 10704 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-14 17:51:33.772  WARN 10704 --- [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [NoNodeAvailableException[None of the configured nodes were available: [{LAPTOP-46P30QN8}{OxTylPVDRNCFrTjcrwl-7A}{jI7lbrGRQXSNsJ4DZXvuMw}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=17047015424, ml.max_open_jobs=20, xpack.installed=true}]]; nested: NodeDisconnectedException[[LAPTOP-46P30QN8][127.0.0.1:9300][indices:admin/delete] disconnected];]
+2021-01-14 17:51:37.313  INFO 4100 --- [restartedMain] c.l.springboot.SpringbootApplication     : Starting SpringbootApplication on LAPTOP-46P30QN8 with PID 4100 (D:\QDHL\springbootDemo\target\classes started by wangyuling in D:\QDHL\springbootDemo)
+2021-01-14 17:51:37.316  INFO 4100 --- [restartedMain] c.l.springboot.SpringbootApplication     : No active profile set, falling back to default profiles: default
+2021-01-14 17:51:37.364  INFO 4100 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-01-14 17:51:37.365  INFO 4100 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-01-14 17:51:37.826  INFO 4100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-14 17:51:37.827  INFO 4100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2021-01-14 17:51:37.835  INFO 4100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4ms. Found 0 Elasticsearch repository interfaces.
+2021-01-14 17:51:37.942  WARN 4100 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.light.springboot]' package. Please check your configuration.
+2021-01-14 17:51:37.987  INFO 4100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-14 17:51:37.987  INFO 4100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2021-01-14 17:51:37.990  INFO 4100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2ms. Found 0 Elasticsearch repository interfaces.
+2021-01-14 17:51:37.994  INFO 4100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-14 17:51:37.995  INFO 4100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2021-01-14 17:51:37.998  INFO 4100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2ms. Found 0 Reactive Elasticsearch repository interfaces.
+2021-01-14 17:51:38.010  INFO 4100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-14 17:51:38.011  INFO 4100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-14 17:51:38.028  INFO 4100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2ms. Found 0 Redis repository interfaces.
+2021-01-14 17:51:38.144  INFO 4100 --- [restartedMain] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'myBatisConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2021-01-14 17:51:38.723  INFO 4100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-01-14 17:51:38.731  INFO 4100 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-14 17:51:38.731  INFO 4100 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2021-01-14 17:51:38.886  INFO 4100 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-14 17:51:38.886  INFO 4100 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1521 ms
+2021-01-14 17:51:39.263  INFO 4100 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : no modules loaded
+2021-01-14 17:51:39.264  INFO 4100 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2021-01-14 17:51:39.264  INFO 4100 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2021-01-14 17:51:39.264  INFO 4100 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2021-01-14 17:51:39.264  INFO 4100 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2021-01-14 17:51:39.264  INFO 4100 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2021-01-14 17:51:40.387  INFO 4100 --- [restartedMain] o.s.d.e.c.TransportClientFactoryBean     : Adding transport node : 127.0.0.1:9300
+2021-01-14 17:51:41.887  INFO 4100 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-14 17:51:42.004  WARN 4100 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-01-14 17:51:42.675  INFO 4100 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-01-14 17:51:42.707  INFO 4100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-01-14 17:51:42.711  INFO 4100 --- [restartedMain] c.l.springboot.SpringbootApplication     : Started SpringbootApplication in 5.903 seconds (JVM running for 7.071)
+2021-01-14 17:52:01.188  INFO 4100 --- [Thread-18] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-14 17:52:02.844  INFO 4100 --- [restartedMain] c.l.springboot.SpringbootApplication     : Starting SpringbootApplication on LAPTOP-46P30QN8 with PID 4100 (D:\QDHL\springbootDemo\target\classes started by wangyuling in D:\QDHL\springbootDemo)
+2021-01-14 17:52:02.845  INFO 4100 --- [restartedMain] c.l.springboot.SpringbootApplication     : No active profile set, falling back to default profiles: default
+2021-01-14 17:52:03.010  INFO 4100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-14 17:52:03.010  INFO 4100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2021-01-14 17:52:03.011  INFO 4100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1ms. Found 0 Elasticsearch repository interfaces.
+2021-01-14 17:52:03.040  WARN 4100 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.light.springboot]' package. Please check your configuration.
+2021-01-14 17:52:03.058  INFO 4100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-14 17:52:03.058  INFO 4100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2021-01-14 17:52:03.061  INFO 4100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2ms. Found 0 Elasticsearch repository interfaces.
+2021-01-14 17:52:03.064  INFO 4100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-14 17:52:03.064  INFO 4100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2021-01-14 17:52:03.067  INFO 4100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2ms. Found 0 Reactive Elasticsearch repository interfaces.
+2021-01-14 17:52:03.070  INFO 4100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-14 17:52:03.070  INFO 4100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-14 17:52:03.073  INFO 4100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2ms. Found 0 Redis repository interfaces.
+2021-01-14 17:52:03.111  INFO 4100 --- [restartedMain] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'myBatisConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2021-01-14 17:52:03.278  INFO 4100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-01-14 17:52:03.279  INFO 4100 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-14 17:52:03.279  INFO 4100 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2021-01-14 17:52:03.315  INFO 4100 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-14 17:52:03.315  INFO 4100 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 466 ms
+2021-01-14 17:52:03.340  INFO 4100 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : no modules loaded
+2021-01-14 17:52:03.340  INFO 4100 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2021-01-14 17:52:03.340  INFO 4100 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2021-01-14 17:52:03.340  INFO 4100 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2021-01-14 17:52:03.340  INFO 4100 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2021-01-14 17:52:03.340  INFO 4100 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2021-01-14 17:52:03.358  INFO 4100 --- [restartedMain] o.s.d.e.c.TransportClientFactoryBean     : Adding transport node : 127.0.0.1:9300
+2021-01-14 17:52:03.680  INFO 4100 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-14 17:52:03.743  WARN 4100 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-01-14 17:52:03.927  INFO 4100 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-01-14 17:52:03.942  INFO 4100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-01-14 17:52:03.942  INFO 4100 --- [restartedMain] c.l.springboot.SpringbootApplication     : Started SpringbootApplication in 1.131 seconds (JVM running for 28.303)
+2021-01-14 17:52:03.944  INFO 4100 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-01-14 17:52:27.306  INFO 4100 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-14 17:52:27.307  INFO 4100 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-14 17:52:27.316  INFO 4100 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2021-01-14 17:53:43.771  INFO 4100 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-14 17:53:43.841  WARN 4100 --- [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [NoNodeAvailableException[None of the configured nodes were available: [{LAPTOP-46P30QN8}{OxTylPVDRNCFrTjcrwl-7A}{jI7lbrGRQXSNsJ4DZXvuMw}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=17047015424, ml.max_open_jobs=20, xpack.installed=true}]]; nested: NodeDisconnectedException[[LAPTOP-46P30QN8][127.0.0.1:9300][indices:admin/delete] disconnected];]
+2021-01-14 17:53:47.180  INFO 19472 --- [restartedMain] c.l.springboot.SpringbootApplication     : Starting SpringbootApplication on LAPTOP-46P30QN8 with PID 19472 (D:\QDHL\springbootDemo\target\classes started by wangyuling in D:\QDHL\springbootDemo)
+2021-01-14 17:53:47.183  INFO 19472 --- [restartedMain] c.l.springboot.SpringbootApplication     : No active profile set, falling back to default profiles: default
+2021-01-14 17:53:47.236  INFO 19472 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-01-14 17:53:47.237  INFO 19472 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-01-14 17:53:47.753  INFO 19472 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-14 17:53:47.754  INFO 19472 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2021-01-14 17:53:47.763  INFO 19472 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4ms. Found 0 Elasticsearch repository interfaces.
+2021-01-14 17:53:47.868  WARN 19472 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.light.springboot]' package. Please check your configuration.
+2021-01-14 17:53:47.911  INFO 19472 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-14 17:53:47.912  INFO 19472 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2021-01-14 17:53:47.915  INFO 19472 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3ms. Found 0 Elasticsearch repository interfaces.
+2021-01-14 17:53:47.921  INFO 19472 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-14 17:53:47.921  INFO 19472 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2021-01-14 17:53:47.925  INFO 19472 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3ms. Found 0 Reactive Elasticsearch repository interfaces.
+2021-01-14 17:53:47.944  INFO 19472 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-14 17:53:47.945  INFO 19472 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-14 17:53:47.955  INFO 19472 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2ms. Found 0 Redis repository interfaces.
+2021-01-14 17:53:48.060  INFO 19472 --- [restartedMain] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'myBatisConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2021-01-14 17:53:48.591  INFO 19472 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-01-14 17:53:48.599  INFO 19472 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-14 17:53:48.599  INFO 19472 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2021-01-14 17:53:48.752  INFO 19472 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-14 17:53:48.752  INFO 19472 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1515 ms
+2021-01-14 17:53:49.137  INFO 19472 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : no modules loaded
+2021-01-14 17:53:49.138  INFO 19472 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2021-01-14 17:53:49.138  INFO 19472 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2021-01-14 17:53:49.138  INFO 19472 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2021-01-14 17:53:49.138  INFO 19472 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2021-01-14 17:53:49.138  INFO 19472 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2021-01-14 17:53:50.255  INFO 19472 --- [restartedMain] o.s.d.e.c.TransportClientFactoryBean     : Adding transport node : 127.0.0.1:9300
+2021-01-14 17:53:51.713  INFO 19472 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-14 17:53:51.825  WARN 19472 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-01-14 17:53:52.491  INFO 19472 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-01-14 17:53:52.527  INFO 19472 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-01-14 17:53:52.529  INFO 19472 --- [restartedMain] c.l.springboot.SpringbootApplication     : Started SpringbootApplication in 5.757 seconds (JVM running for 6.835)
+2021-01-14 17:54:02.927  INFO 19472 --- [http-nio-8080-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-14 17:54:02.927  INFO 19472 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-14 17:54:02.936  INFO 19472 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2021-01-14 17:55:06.118  INFO 19472 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-14 17:55:06.184  WARN 19472 --- [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [NoNodeAvailableException[None of the configured nodes were available: [{LAPTOP-46P30QN8}{OxTylPVDRNCFrTjcrwl-7A}{jI7lbrGRQXSNsJ4DZXvuMw}{127.0.0.1}{127.0.0.1:9300}{ml.machine_memory=17047015424, ml.max_open_jobs=20, xpack.installed=true}]]; nested: NodeDisconnectedException[[LAPTOP-46P30QN8][127.0.0.1:9300][indices:admin/delete] disconnected];]
+2021-01-14 17:56:30.264  INFO 11984 --- [restartedMain] c.l.springboot.SpringbootApplication     : Starting SpringbootApplication on LAPTOP-46P30QN8 with PID 11984 (D:\QDHL\springbootDemo\target\classes started by wangyuling in D:\QDHL\springbootDemo)
+2021-01-14 17:56:30.266  INFO 11984 --- [restartedMain] c.l.springboot.SpringbootApplication     : No active profile set, falling back to default profiles: default
+2021-01-14 17:56:30.310  INFO 11984 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-01-14 17:56:30.311  INFO 11984 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-01-14 17:56:30.796  INFO 11984 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-14 17:56:30.797  INFO 11984 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2021-01-14 17:56:30.806  INFO 11984 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4ms. Found 0 Elasticsearch repository interfaces.
+2021-01-14 17:56:30.919  WARN 11984 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.light.springboot]' package. Please check your configuration.
+2021-01-14 17:56:30.964  INFO 11984 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-14 17:56:30.965  INFO 11984 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2021-01-14 17:56:30.968  INFO 11984 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3ms. Found 0 Elasticsearch repository interfaces.
+2021-01-14 17:56:30.972  INFO 11984 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-14 17:56:30.972  INFO 11984 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2021-01-14 17:56:30.975  INFO 11984 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2ms. Found 0 Reactive Elasticsearch repository interfaces.
+2021-01-14 17:56:30.994  INFO 11984 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-14 17:56:30.995  INFO 11984 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-14 17:56:31.006  INFO 11984 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2ms. Found 0 Redis repository interfaces.
+2021-01-14 17:56:31.108  INFO 11984 --- [restartedMain] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'myBatisConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2021-01-14 17:56:31.696  INFO 11984 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-01-14 17:56:31.704  INFO 11984 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-14 17:56:31.704  INFO 11984 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2021-01-14 17:56:31.863  INFO 11984 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-14 17:56:31.864  INFO 11984 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1553 ms
+2021-01-14 17:56:32.277  INFO 11984 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : no modules loaded
+2021-01-14 17:56:32.278  INFO 11984 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2021-01-14 17:56:32.278  INFO 11984 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2021-01-14 17:56:32.278  INFO 11984 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2021-01-14 17:56:32.278  INFO 11984 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2021-01-14 17:56:32.278  INFO 11984 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2021-01-14 17:56:33.530  INFO 11984 --- [restartedMain] o.s.d.e.c.TransportClientFactoryBean     : Adding transport node : 127.0.0.1:9300
+2021-01-14 17:56:35.135  INFO 11984 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-14 17:56:35.249  WARN 11984 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-01-14 17:56:35.905  INFO 11984 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-01-14 17:56:35.940  INFO 11984 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-01-14 17:56:35.942  INFO 11984 --- [restartedMain] c.l.springboot.SpringbootApplication     : Started SpringbootApplication in 6.098 seconds (JVM running for 7.136)
+2021-01-14 17:57:06.670  INFO 11984 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-14 17:57:06.670  INFO 11984 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-14 17:57:06.679  INFO 11984 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2021-01-14 17:57:51.013  INFO 11984 --- [Thread-18] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-14 17:57:52.489  INFO 11984 --- [restartedMain] c.l.springboot.SpringbootApplication     : Starting SpringbootApplication on LAPTOP-46P30QN8 with PID 11984 (D:\QDHL\springbootDemo\target\classes started by wangyuling in D:\QDHL\springbootDemo)
+2021-01-14 17:57:52.489  INFO 11984 --- [restartedMain] c.l.springboot.SpringbootApplication     : No active profile set, falling back to default profiles: default
+2021-01-14 17:57:52.657  INFO 11984 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-14 17:57:52.657  INFO 11984 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2021-01-14 17:57:52.658  INFO 11984 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0ms. Found 0 Elasticsearch repository interfaces.
+2021-01-14 17:57:52.687  WARN 11984 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.light.springboot]' package. Please check your configuration.
+2021-01-14 17:57:52.702  INFO 11984 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-14 17:57:52.702  INFO 11984 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2021-01-14 17:57:52.704  INFO 11984 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2ms. Found 0 Elasticsearch repository interfaces.
+2021-01-14 17:57:52.705  INFO 11984 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-14 17:57:52.705  INFO 11984 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2021-01-14 17:57:52.708  INFO 11984 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2ms. Found 0 Reactive Elasticsearch repository interfaces.
+2021-01-14 17:57:52.714  INFO 11984 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-14 17:57:52.715  INFO 11984 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-14 17:57:52.718  INFO 11984 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2ms. Found 0 Redis repository interfaces.
+2021-01-14 17:57:52.752  INFO 11984 --- [restartedMain] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'myBatisConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2021-01-14 17:57:52.905  INFO 11984 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-01-14 17:57:52.905  INFO 11984 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-14 17:57:52.905  INFO 11984 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2021-01-14 17:57:52.939  INFO 11984 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-14 17:57:52.939  INFO 11984 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 446 ms
+2021-01-14 17:57:52.966  INFO 11984 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : no modules loaded
+2021-01-14 17:57:52.966  INFO 11984 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2021-01-14 17:57:52.966  INFO 11984 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2021-01-14 17:57:52.966  INFO 11984 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2021-01-14 17:57:52.966  INFO 11984 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2021-01-14 17:57:52.966  INFO 11984 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2021-01-14 17:57:52.986  INFO 11984 --- [restartedMain] o.s.d.e.c.TransportClientFactoryBean     : Adding transport node : 127.0.0.1:9300
+2021-01-14 17:57:53.211  INFO 11984 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-14 17:57:53.272  WARN 11984 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-01-14 17:57:53.467  INFO 11984 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-01-14 17:57:53.484  INFO 11984 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-01-14 17:57:53.485  INFO 11984 --- [restartedMain] c.l.springboot.SpringbootApplication     : Started SpringbootApplication in 1.029 seconds (JVM running for 84.68)
+2021-01-14 17:57:53.487  INFO 11984 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-01-14 17:58:00.627  INFO 11984 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-14 17:58:00.628  INFO 11984 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-14 17:58:00.634  INFO 11984 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2021-01-14 18:03:25.932  INFO 11984 --- [Thread-25] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-14 18:03:27.378  INFO 11984 --- [restartedMain] c.l.springboot.SpringbootApplication     : Starting SpringbootApplication on LAPTOP-46P30QN8 with PID 11984 (D:\QDHL\springbootDemo\target\classes started by wangyuling in D:\QDHL\springbootDemo)
+2021-01-14 18:03:27.379  INFO 11984 --- [restartedMain] c.l.springboot.SpringbootApplication     : No active profile set, falling back to default profiles: default
+2021-01-14 18:03:27.523  INFO 11984 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-14 18:03:27.523  INFO 11984 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2021-01-14 18:03:27.524  INFO 11984 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0ms. Found 0 Elasticsearch repository interfaces.
+2021-01-14 18:03:27.550  WARN 11984 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.light.springboot]' package. Please check your configuration.
+2021-01-14 18:03:27.562  INFO 11984 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-14 18:03:27.562  INFO 11984 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2021-01-14 18:03:27.564  INFO 11984 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2ms. Found 0 Elasticsearch repository interfaces.
+2021-01-14 18:03:27.565  INFO 11984 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-14 18:03:27.565  INFO 11984 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2021-01-14 18:03:27.568  INFO 11984 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2ms. Found 0 Reactive Elasticsearch repository interfaces.
+2021-01-14 18:03:27.571  INFO 11984 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-14 18:03:27.571  INFO 11984 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-14 18:03:27.573  INFO 11984 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2ms. Found 0 Redis repository interfaces.
+2021-01-14 18:03:27.602  INFO 11984 --- [restartedMain] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'myBatisConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2021-01-14 18:03:27.750  INFO 11984 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-01-14 18:03:27.751  INFO 11984 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-14 18:03:27.751  INFO 11984 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2021-01-14 18:03:27.780  INFO 11984 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-14 18:03:27.780  INFO 11984 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 397 ms
+2021-01-14 18:03:27.799  INFO 11984 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : no modules loaded
+2021-01-14 18:03:27.800  INFO 11984 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2021-01-14 18:03:27.800  INFO 11984 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2021-01-14 18:03:27.800  INFO 11984 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2021-01-14 18:03:27.800  INFO 11984 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2021-01-14 18:03:27.800  INFO 11984 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2021-01-14 18:03:27.813  INFO 11984 --- [restartedMain] o.s.d.e.c.TransportClientFactoryBean     : Adding transport node : 127.0.0.1:9300
+2021-01-14 18:03:28.026  INFO 11984 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-14 18:03:28.071  WARN 11984 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-01-14 18:03:28.204  INFO 11984 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-01-14 18:03:28.217  INFO 11984 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-01-14 18:03:28.217  INFO 11984 --- [restartedMain] c.l.springboot.SpringbootApplication     : Started SpringbootApplication in 0.867 seconds (JVM running for 419.412)
+2021-01-14 18:03:28.218  INFO 11984 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-01-14 18:14:11.101  INFO 11984 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-14 18:14:19.750  INFO 17672 --- [restartedMain] c.l.springboot.SpringbootApplication     : Starting SpringbootApplication on LAPTOP-46P30QN8 with PID 17672 (D:\QDHL\springbootDemo\target\classes started by wangyuling in D:\QDHL\springbootDemo)
+2021-01-14 18:14:19.753  INFO 17672 --- [restartedMain] c.l.springboot.SpringbootApplication     : No active profile set, falling back to default profiles: default
+2021-01-14 18:14:19.796  INFO 17672 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-01-14 18:14:19.797  INFO 17672 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-01-14 18:14:20.254  INFO 17672 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-14 18:14:20.255  INFO 17672 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2021-01-14 18:14:20.307  INFO 17672 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48ms. Found 1 Elasticsearch repository interfaces.
+2021-01-14 18:14:20.431  WARN 17672 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.light.springboot]' package. Please check your configuration.
+2021-01-14 18:14:20.486  INFO 17672 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-14 18:14:20.487  INFO 17672 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2021-01-14 18:14:20.493  INFO 17672 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6ms. Found 0 Reactive Elasticsearch repository interfaces.
+2021-01-14 18:14:20.503  INFO 17672 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-14 18:14:20.504  INFO 17672 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-14 18:14:20.516  INFO 17672 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.light.springboot.es.repository.knowledgeEntryDocumentRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021-01-14 18:14:20.517  INFO 17672 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5ms. Found 0 Redis repository interfaces.
+2021-01-14 18:14:20.614  INFO 17672 --- [restartedMain] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'myBatisConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2021-01-14 18:14:21.155  INFO 17672 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-01-14 18:14:21.195  INFO 17672 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-14 18:14:21.195  INFO 17672 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2021-01-14 18:14:21.304  INFO 17672 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-14 18:14:21.304  INFO 17672 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1507 ms
+2021-01-14 18:14:21.694  INFO 17672 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : no modules loaded
+2021-01-14 18:14:21.695  INFO 17672 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2021-01-14 18:14:21.695  INFO 17672 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2021-01-14 18:14:21.695  INFO 17672 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2021-01-14 18:14:21.695  INFO 17672 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2021-01-14 18:14:21.695  INFO 17672 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2021-01-14 18:14:22.828  INFO 17672 --- [restartedMain] o.s.d.e.c.TransportClientFactoryBean     : Adding transport node : 127.0.0.1:9300
+2021-01-14 18:14:24.474  INFO 17672 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-14 18:14:24.590  WARN 17672 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-01-14 18:14:25.245  INFO 17672 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-01-14 18:14:25.279  INFO 17672 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-01-14 18:14:25.281  INFO 17672 --- [restartedMain] c.l.springboot.SpringbootApplication     : Started SpringbootApplication in 6.0 seconds (JVM running for 7.008)
+2021-01-14 18:28:57.617  INFO 17672 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-14 18:28:57.617  INFO 17672 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-14 18:28:57.625  INFO 17672 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2021-01-14 18:36:45.602  INFO 17672 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-14 18:36:52.219  INFO 14328 --- [restartedMain] c.l.springboot.SpringbootApplication     : Starting SpringbootApplication on LAPTOP-46P30QN8 with PID 14328 (D:\QDHL\springbootDemo\target\classes started by wangyuling in D:\QDHL\springbootDemo)
+2021-01-14 18:36:52.221  INFO 14328 --- [restartedMain] c.l.springboot.SpringbootApplication     : No active profile set, falling back to default profiles: default
+2021-01-14 18:36:52.295  INFO 14328 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-01-14 18:36:52.296  INFO 14328 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-01-14 18:36:52.802  INFO 14328 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-14 18:36:52.803  INFO 14328 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2021-01-14 18:36:52.852  INFO 14328 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 45ms. Found 1 Elasticsearch repository interfaces.
+2021-01-14 18:36:52.963  WARN 14328 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.light.springboot]' package. Please check your configuration.
+2021-01-14 18:36:53.014  INFO 14328 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-14 18:36:53.015  INFO 14328 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2021-01-14 18:36:53.021  INFO 14328 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 5ms. Found 0 Reactive Elasticsearch repository interfaces.
+2021-01-14 18:36:53.032  INFO 14328 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-14 18:36:53.033  INFO 14328 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-14 18:36:53.044  INFO 14328 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.light.springboot.es.repository.knowledgeEntryDocumentRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021-01-14 18:36:53.044  INFO 14328 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4ms. Found 0 Redis repository interfaces.
+2021-01-14 18:36:53.142  INFO 14328 --- [restartedMain] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'myBatisConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2021-01-14 18:36:53.692  INFO 14328 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-01-14 18:36:53.772  INFO 14328 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-14 18:36:53.773  INFO 14328 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2021-01-14 18:36:53.885  INFO 14328 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-14 18:36:53.885  INFO 14328 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1589 ms
+2021-01-14 18:36:54.275  INFO 14328 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : no modules loaded
+2021-01-14 18:36:54.276  INFO 14328 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2021-01-14 18:36:54.276  INFO 14328 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2021-01-14 18:36:54.276  INFO 14328 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2021-01-14 18:36:54.276  INFO 14328 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2021-01-14 18:36:54.276  INFO 14328 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2021-01-14 18:36:55.444  INFO 14328 --- [restartedMain] o.s.d.e.c.TransportClientFactoryBean     : Adding transport node : 127.0.0.1:9300
+2021-01-14 18:36:56.990  INFO 14328 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-14 18:36:57.114  WARN 14328 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-01-14 18:36:57.822  INFO 14328 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-01-14 18:36:57.855  INFO 14328 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-01-14 18:36:57.857  INFO 14328 --- [restartedMain] c.l.springboot.SpringbootApplication     : Started SpringbootApplication in 6.073 seconds (JVM running for 7.075)
+2021-01-14 18:37:08.969  INFO 14328 --- [http-nio-8080-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-14 18:37:08.969  INFO 14328 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-14 18:37:08.978  INFO 14328 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2021-01-14 18:45:42.281  INFO 14328 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-01-14 18:45:47.454  INFO 13892 --- [restartedMain] c.l.springboot.SpringbootApplication     : Starting SpringbootApplication on LAPTOP-46P30QN8 with PID 13892 (D:\QDHL\springbootDemo\target\classes started by wangyuling in D:\QDHL\springbootDemo)
+2021-01-14 18:45:47.457  INFO 13892 --- [restartedMain] c.l.springboot.SpringbootApplication     : No active profile set, falling back to default profiles: default
+2021-01-14 18:45:47.494  INFO 13892 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-01-14 18:45:47.495  INFO 13892 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-01-14 18:45:47.937  INFO 13892 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-14 18:45:47.938  INFO 13892 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2021-01-14 18:45:47.986  INFO 13892 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44ms. Found 1 Elasticsearch repository interfaces.
+2021-01-14 18:45:48.090  WARN 13892 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.light.springboot]' package. Please check your configuration.
+2021-01-14 18:45:48.145  INFO 13892 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-14 18:45:48.145  INFO 13892 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2021-01-14 18:45:48.152  INFO 13892 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6ms. Found 0 Reactive Elasticsearch repository interfaces.
+2021-01-14 18:45:48.163  INFO 13892 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-01-14 18:45:48.164  INFO 13892 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-01-14 18:45:48.175  INFO 13892 --- [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.light.springboot.es.repository.knowledgeEntryDocumentRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2021-01-14 18:45:48.176  INFO 13892 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 4ms. Found 0 Redis repository interfaces.
+2021-01-14 18:45:48.268  INFO 13892 --- [restartedMain] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'myBatisConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2021-01-14 18:45:48.835  INFO 13892 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-01-14 18:45:48.843  INFO 13892 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-01-14 18:45:48.844  INFO 13892 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2021-01-14 18:45:48.954  INFO 13892 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-01-14 18:45:48.955  INFO 13892 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1459 ms
+2021-01-14 18:45:49.335  INFO 13892 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : no modules loaded
+2021-01-14 18:45:49.336  INFO 13892 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.index.reindex.ReindexPlugin]
+2021-01-14 18:45:49.336  INFO 13892 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.join.ParentJoinPlugin]
+2021-01-14 18:45:49.336  INFO 13892 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.percolator.PercolatorPlugin]
+2021-01-14 18:45:49.336  INFO 13892 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.script.mustache.MustachePlugin]
+2021-01-14 18:45:49.336  INFO 13892 --- [restartedMain] o.elasticsearch.plugins.PluginsService   : loaded plugin [org.elasticsearch.transport.Netty4Plugin]
+2021-01-14 18:45:50.466  INFO 13892 --- [restartedMain] o.s.d.e.c.TransportClientFactoryBean     : Adding transport node : 127.0.0.1:9300
+2021-01-14 18:45:51.995  INFO 13892 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-01-14 18:45:52.106  WARN 13892 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2021-01-14 18:45:52.758  INFO 13892 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-01-14 18:45:52.793  INFO 13892 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-01-14 18:45:52.795  INFO 13892 --- [restartedMain] c.l.springboot.SpringbootApplication     : Started SpringbootApplication in 5.77 seconds (JVM running for 6.771)
+2021-01-14 18:47:08.568  INFO 13892 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-14 18:47:08.569  INFO 13892 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-01-14 18:47:08.576  INFO 13892 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2021-01-14 20:06:50.617  INFO 13892 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'

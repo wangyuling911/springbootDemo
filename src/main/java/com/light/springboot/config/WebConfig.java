@@ -16,7 +16,7 @@ public class WebConfig {
         FilterRegistrationBean registrationBean = new FilterRegistrationBean();
         TimeFilter timeFilter = new TimeFilter();
         registrationBean.setFilter(timeFilter);
-        List<String> urls = new ArrayList<>();
+        List<String> urls = new ArrayList<String>();
         urls.add("/*");
         registrationBean.setUrlPatterns(urls);
         return registrationBean;
