@@ -1,14 +1,24 @@
 package com.light.springboot.service;
 
-public class MoreThreadserive {
-    public String str;
+import lombok.Data;
 
-    public MoreThreadserive(String str) {
-        this.str = str;
+import java.util.ArrayList;
+import java.util.List;
+@Data
+public class MoreThreadserive {
+
+
+
+    List a;
+
+    public static void main(String[] args) {
+        MoreThreadserive moreThreadserive = new MoreThreadserive();
+        List a = moreThreadserive.getA();
+        a= new ArrayList<String>();
+        moreThreadserive.setA(a);
+        a.add("1212");
+        System.out.println(moreThreadserive);
+
     }
-    public void threadMeth(){
-        for (int i = 0; i < 10; i++) {
-            System.out.println(str+":"+i);
-        }
-    }
+
 }

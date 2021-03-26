@@ -1,9 +1,7 @@
 package com.light.springboot.service;
 
-import com.netflix.hystrix.HystrixCommand;
-import com.netflix.hystrix.HystrixCommandGroupKey;
+
 import org.springframework.beans.factory.FactoryBean;
-import org.springframework.transaction.annotation.Transactional;
 
 public class CommandHelloWorld  implements FactoryBean {
 
