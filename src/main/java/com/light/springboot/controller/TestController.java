@@ -2,12 +2,14 @@ package com.light.springboot.controller;
 
 import com.light.springboot.es.document.KnowledgeEntryDocument;
 import com.light.springboot.es.repository.knowledgeEntryDocumentRepository;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.elasticsearch.core.ElasticsearchTemplate;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@Slf4j
 public class TestController {
 
     @Autowired
@@ -18,16 +20,8 @@ public class TestController {
 
     @GetMapping("/helloworld")
     public String helloworld() {
-        // boolean index = elasticsearchTemplate.createIndex(KnowledgeEntryDocument.class);
-        //elasticsearchTemplate.putMapping(KnowledgeEntryDocument.class);
-        // boolean b = elasticsearchTemplate.deleteIndex(KnowledgeEntryDocument.class);
-        KnowledgeEntryDocument knowledgeEntryDocument = new KnowledgeEntryDocument();
-        knowledgeEntryDocument.setId("1");
-        knowledgeEntryDocument.setTeamId(134L);
-        knowledgeEntryDocument.setTenantId(29146);
-        knowledgeEntryDocument.setAgentUserId("agentUserId");
-        KnowledgeEntryDocument save = knowledgeEntryDocumentRepository.save(knowledgeEntryDocument);
-        return String.valueOf(save);
+        log.info("beijign ");
+        return null;
     }
 
     @GetMapping("/delete")
