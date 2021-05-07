@@ -2,8 +2,6 @@ package com.light.springboot.controller;
 
 import com.light.springboot.es.document.KnowledgeEntryDocument;
 import com.light.springboot.es.repository.knowledgeEntryDocumentRepository;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.elasticsearch.core.ElasticsearchTemplate;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -11,7 +9,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class TestController {
-    private final static Logger logger = LoggerFactory.getLogger(TestController.class);
 
     @Autowired
     private ElasticsearchTemplate elasticsearchTemplate;
