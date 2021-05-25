@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class TimeAspect {
 
-    @Around("execution(* com.light.springboot.controller.TestController..*(..))")
+   // @Around("execution(* com.light.springboot.controller.TestController..*(..))")
     public Object method(ProceedingJoinPoint pjp) throws Throwable {
         System.out.println("=====Aspect处理=======");
         Object[] args = pjp.getArgs();
