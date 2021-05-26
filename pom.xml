@@ -6,8 +6,12 @@
 
     <groupId>com.qding</groupId>
     <artifactId>springbootdome</artifactId>
-    <packaging>jar</packaging>
+    <packaging>pom</packaging>
     <version>0.3.0-SNAPSHOT</version>
+    <modules>
+        <module>server</module>
+        <module>provide</module>
+    </modules>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -28,13 +32,6 @@
             <artifactId>cxf-rt-transports-http</artifactId>
             <version>3.2.2</version>
         </dependency>
-
-        <dependency>
-            <groupId>org.apache.cxf</groupId>
-            <artifactId>cxf-rt-frontend-jaxws</artifactId>
-            <version>3.2.2</version>
-        </dependency>
-
         <dependency>
             <groupId>com.alipay.sdk</groupId>
             <artifactId>alipay-sdk-java</artifactId>
