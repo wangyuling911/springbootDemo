@@ -52,27 +52,23 @@ public class KafkaProducer {
         //发送消息
         List<PartitionInfo> partitionInfos = kafkaTemplate.partitionsFor(TOPIC_TEST);
         MessageConverter messageConverter = kafkaTemplate.getMessageConverter();
-
-
         System.out.println(partitionInfos.toString());
-        ListenableFuture<SendResult<String, Object>> future = kafkaTemplate.send(TOPIC_TEST,0,"wang0", "分区0");
-        ListenableFuture<SendResult<String, Object>> future1 = kafkaTemplate.send(TOPIC_TEST,1,"wang1", "分区1");
-        ListenableFuture<SendResult<String, Object>> future2 = kafkaTemplate.send(TOPIC_TEST,2,"wang2", "分区2");
-        ListenableFuture<SendResult<String, Object>> future3 = kafkaTemplate.send(TOPIC_TEST,3,"wang3", "分区3");
-        ListenableFuture<SendResult<String, Object>> future4 = kafkaTemplate.send(TOPIC_TEST,4,"wang4", "分区4");
-        future.addCallback(new ListenableFutureCallback<SendResult<String, Object>>() {
-            @Override
-            public void onFailure(Throwable throwable) {
-                //发送失败的处理
-                log.info(TOPIC_TEST + " - 生产者 发送消息失败：" + throwable.getMessage());
-            }
+        for (int i = 0; i < 6; i++) {
+            ListenableFuture<SendResult<String, Object>> future = kafkaTemplate.send(TOPIC_TEST,0,"wang0", obj2String+i);
+        }
 
-            @Override
-            public void onSuccess(SendResult<String, Object> stringObjectSendResult) {
-                //成功的处理
-                log.info(TOPIC_TEST + " - 生产者 发送消息成功：" + stringObjectSendResult.toString());
-            }
-        });
+//        future.addCallback(new ListenableFutureCallback<SendResult<String, Object>>() {
+//            @Override
+//            public void onFailure(Throwable throwable) {
+//                //发送失败的处理
+//                log.info(TOPIC_TEST + " - 生产者 发送消息失败：" + throwable.getMessage());
+//            }
+//            @Override
+//            public void onSuccess(SendResult<String, Object> stringObjectSendResult) {
+//                //成功的处理
+//                log.info(TOPIC_TEST + " - 生产者 发送消息成功：" + stringObjectSendResult.toString());
+//            }
+//        });
 
 
     }

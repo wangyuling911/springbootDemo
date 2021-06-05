@@ -14,8 +14,8 @@ public class TestController {
     KafkaProducer kafkaProducer;
 
     @GetMapping("/helloworld")
-    public String helloworld() {
-        kafkaProducer.send("wangyuling");
+    public String helloworld(String wang) {
+        kafkaProducer.send(wang);
         return "王";
     }
 
