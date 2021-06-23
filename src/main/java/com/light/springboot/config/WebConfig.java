@@ -11,7 +11,6 @@ import java.util.List;
 @Configuration
 public class WebConfig {
 
-    @Bean
     public FilterRegistrationBean timeFilter() {
         FilterRegistrationBean registrationBean = new FilterRegistrationBean();
         TimeFilter timeFilter = new TimeFilter();
