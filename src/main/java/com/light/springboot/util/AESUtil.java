@@ -5,9 +5,11 @@ import org.apache.commons.lang.StringUtils;
 import javax.crypto.Cipher;
 import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
+import java.io.UnsupportedEncodingException;
 import java.nio.charset.Charset;
 import java.security.GeneralSecurityException;
 import java.util.Arrays;
+import java.util.Base64;
 
 /**
  * AES_CBC加密相关
@@ -24,7 +26,20 @@ public class AESUtil {
         return encryptByAesCbc(plainText, CommCryptUtil.hexStr2Byte(workKey), CommCryptUtil.genSecureRandomByte(16));
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws UnsupportedEncodingException {
+
+        //policy
+        String policy = "ABC";
+        byte[] bytes = policy.getBytes(Charset.forName("UTF-8"));
+        for (byte b : bytes) {
+            System.out.println(b);
+        }
+        byte[] decode = Base64.getEncoder().encode(bytes);
+        String s = new String(decode, "UTF-8");
+        System.out.println(s);
+
+
+
 
     }
 
