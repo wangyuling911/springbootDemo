@@ -1,4 +1,4 @@
-package com.wyl.provide;
+package com.wyl.server;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -8,9 +8,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  自动装配 web 依赖的环境
  **/
 @SpringBootApplication
-public class SpringbootApplication {
+
+public class Server {
     public static void main(String[] args) {
-        SpringApplication.run(SpringbootApplication.class, args);
+        SpringApplication.run(Server.class, args);
     }
 }
 

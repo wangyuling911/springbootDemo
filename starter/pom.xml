@@ -9,14 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>server</artifactId>
-    <dependencies>
-        <dependency>
-            <groupId>com.qding</groupId>
-            <artifactId>starter</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-    </dependencies>
+    <artifactId>starter</artifactId>
 
 
 </project>
