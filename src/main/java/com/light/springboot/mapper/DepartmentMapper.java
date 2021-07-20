@@ -1,8 +1,9 @@
 package com.light.springboot.mapper;
 
 import com.light.springboot.vo.Department;
-import tk.mybatis.mapper.common.Mapper;
+import org.apache.ibatis.annotations.Mapper;
 
+@Mapper
 public interface DepartmentMapper {
 
     public int insert(Department department);
