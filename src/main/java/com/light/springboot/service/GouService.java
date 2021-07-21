@@ -1,7 +1,8 @@
 package com.light.springboot.service;
 
-import org.springframework.beans.factory.DisposableBean;
-import org.springframework.beans.factory.InitializingBean;
+import org.springframework.beans.BeansException;
+import org.springframework.beans.factory.*;
+import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.SmartLifecycle;
 import org.springframework.stereotype.Service;
@@ -13,8 +14,11 @@ import javax.annotation.PostConstruct;
  *
  * @author wangyuling
  */
-@Service
-public class GouService implements InitializingBean, DisposableBean, SmartLifecycle, CommandLineRunner {
+//@Service
+public class GouService implements InitializingBean, DisposableBean, SmartLifecycle,
+        CommandLineRunner, BeanNameAware, BeanClassLoaderAware, BeanFactoryAware
+        , BeanPostProcessor {
+
 
 
     @Override
@@ -40,7 +44,7 @@ public class GouService implements InitializingBean, DisposableBean, SmartLifecy
     @Override
     public boolean isRunning() {
         System.out.println("GouService  SmartLifecycle isRunning()");
-        return false;
+        return true;
     }
 
     @Override
@@ -51,5 +55,32 @@ public class GouService implements InitializingBean, DisposableBean, SmartLifecy
     @PostConstruct
     public void init() {
         System.out.println("GouService   @PostConstruct init()");
+    }
+
+    @Override
+    public void setBeanName(String name) {
+
+    }
+
+    @Override
+    public void setBeanClassLoader(ClassLoader classLoader) {
+
+    }
+
+    @Override
+    public void setBeanFactory(BeanFactory beanFactory) throws BeansException {
+
+    }
+
+    @Override
+    public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
+        System.out.println("GouService  BeanPostProcessor postProcessBeforeInitialization()");
+        return null;
+    }
+
+    @Override
+    public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
+        System.out.println("GouService  BeanPostProcessor postProcessAfterInitialization()");
+        return null;
     }
 }
