@@ -19,10 +19,7 @@ public class TestController {
         return "beijign";
     }
 
-    public static void main(String[] args) throws InterruptedException {
 
-
-    }
 
 
 

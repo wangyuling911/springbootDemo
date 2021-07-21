@@ -1,18 +1,15 @@
 package com.light.springboot.mapper;
 
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.light.springboot.vo.Department;
-import org.apache.ibatis.annotations.Mapper;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Repository;
 
-@Mapper
-@Service
-public interface DepartmentMapper {
+@Repository
+public interface DepartmentMapper  extends BaseMapper<Department> {
 
-    public int insert(Department department);
+    public static void main(String[] args) {
+        System.out.println("wang");
+    }
 
-    public Department getById(Integer id);
 
-    public void update(Department department);
-
-    public void deleteById(Integer id);
 }

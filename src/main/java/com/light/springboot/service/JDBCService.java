@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class JDBCService {
+
     @Autowired
     DepartmentMapper departmentMapper;
 
@@ -14,6 +15,7 @@ public class JDBCService {
         Department department = new Department();
         department.setName("wang");
         this.departmentMapper.insert(department);
+
 
     }
 }
