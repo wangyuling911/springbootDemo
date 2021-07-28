@@ -61,18 +61,16 @@ public class KafkaConsumers {
 
     }
 
-    int i = 2;
+
     @KafkaListener(topics = KafkaProducer.TOPIC_TEST, groupId = KafkaProducer.TOPIC_GROUP1)
     public void topic_test(ConsumerRecord<?, ?> record, Acknowledgment ack, @Header(KafkaHeaders.RECEIVED_TOPIC) String topic) throws Exception {
         Optional message = Optional.ofNullable(record.value());
         Headers headers = record.headers();
         long offset = record.offset();
         System.out.println(message.get() + "fsdfas" + "------" + offset);
-        i++;
-        if (i % 2 == 0) return;
         if (message.isPresent()) {
             Object msg = message.get();
-
+            Thread.sleep(10000);
             log.info("topic_test 消费了： Topic:" + topic + ",Message:" + msg);
             ack.acknowledge();
         }
