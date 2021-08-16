@@ -9,6 +9,7 @@ import org.springframework.data.elasticsearch.core.ElasticsearchTemplate;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+
 @RestController
 public class TestController {
     private final static Logger logger = LoggerFactory.getLogger(TestController.class);
@@ -25,7 +26,7 @@ public class TestController {
         //elasticsearchTemplate.putMapping(KnowledgeEntryDocument.class);
         // boolean b = elasticsearchTemplate.deleteIndex(KnowledgeEntryDocument.class);
         KnowledgeEntryDocument knowledgeEntryDocument = new KnowledgeEntryDocument();
-        knowledgeEntryDocument.setId("1");
+        knowledgeEntryDocument.setId("4");
         knowledgeEntryDocument.setTeamId(134L);
         knowledgeEntryDocument.setTenantId(29146);
         knowledgeEntryDocument.setAgentUserId("agentUserId");

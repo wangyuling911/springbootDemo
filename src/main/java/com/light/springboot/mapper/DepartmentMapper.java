@@ -1,15 +1,16 @@
 package com.light.springboot.mapper;
 
 import com.light.springboot.vo.Department;
+import org.springframework.stereotype.Component;
 import tk.mybatis.mapper.common.Mapper;
 
+@Component
 public interface DepartmentMapper {
 
-    public int insert(Department department);
+     int insert(Department department);
 
-    public Department getById(Integer id);
+     Department getById(Integer id);
 
-    public void update(Department department);
-
-    public void deleteById(Integer id);
+     void update(Department department);
+     void deleteById(Integer id);
 }

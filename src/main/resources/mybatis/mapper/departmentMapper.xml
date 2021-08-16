@@ -12,7 +12,7 @@
     </select>
 
     <update id="update" parameterType="com.light.springboot.vo.Department">
-        update department set descr = #{descr} where id = #{id}
+        update department set descr = #{descr} ,name= #{name} where id = #{id}
     </update>
 
     <delete id="deleteById" parameterType="java.lang.Integer">

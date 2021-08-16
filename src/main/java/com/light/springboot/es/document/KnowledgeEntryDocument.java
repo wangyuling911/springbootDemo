@@ -15,7 +15,7 @@ import java.io.Serializable;
  * @author liuzheng
  */
 @Data
-@Document(indexName = "knowledgeentry", type = "knowledgeentry", shards = 20)
+@Document(indexName = "knowledgeentry", type = "knowledgeentry", shards = 18)
 public class KnowledgeEntryDocument implements Serializable{
     
     private static final long serialVersionUID = -1704684704619851593L;
