@@ -21,3 +21,4 @@ state
 **/.apt_generated/
 .springBeans
 log.txt
+*.log

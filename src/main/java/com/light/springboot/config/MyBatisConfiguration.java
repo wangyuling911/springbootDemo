@@ -50,6 +50,7 @@ public class MyBatisConfiguration {
     public MapperScannerConfigurer mapperScannerConfigurer() {
         MapperScannerConfigurer mapperScannerConfigurer = new MapperScannerConfigurer();
         mapperScannerConfigurer.setBasePackage("com.light.springboot.mapper");
+
         return mapperScannerConfigurer;
     }
 }
