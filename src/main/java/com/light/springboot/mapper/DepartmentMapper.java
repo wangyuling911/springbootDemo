@@ -7,9 +7,5 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface DepartmentMapper  extends BaseMapper<Department> {
 
-    public static void main(String[] args) {
-        System.out.println("wang");
-    }
-
 
 }
