@@ -1,49 +1,36 @@
 package com.light.springboot.vo;
 
+import org.springframework.stereotype.Component;
+
 import java.util.Date;
 
-public class User {
+@Component
+public class User implements UerInf {
 
     private Integer id;
 
-    private String username;
+    private String username = "wang";
 
     private String password;
 
     private Date birthday;
 
-    public Integer getId() {
-        return id;
-    }
+    private Object target;
 
     public void setId(Integer id) {
         this.id = id;
     }
 
+    public User() {
 
-
-    public String getPassword() {
-        return password;
     }
 
-    public void setPassword(String password) {
-        this.password = password;
+    public User(Object target) {
+        this.target = target;
     }
 
-    public String getUsername() {
-
-        return username;
-    }
-
-    public void setUsername(String username) {
-        this.username = username;
-    }
-
-    public Date getBirthday() {
-        return birthday;
-    }
-
-    public void setBirthday(Date birthday) {
-        this.birthday = birthday;
+    @Override
+    public void sayHello() {
+        System.out.println("caocaocaoao");
     }
 }

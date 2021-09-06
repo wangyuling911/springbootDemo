@@ -47,9 +47,8 @@ public class TestController {
         System.out.println(COUNT_BITS);
 
         int RUNNING = -1 << COUNT_BITS;
-
-        System.out.println(RUNNING);
-        System.out.println(RUNNING | 0);
+        System.out.println( Integer.toBinaryString(RUNNING));
+        System.out.println(Integer.toBinaryString(RUNNING | 0));
     }
 
     @GetMapping("/helloworld3")
@@ -66,7 +65,10 @@ public class TestController {
 
     @GetMapping("/helloworld5")
     public String helloworld5() throws ClassNotFoundException, InterruptedException {
-        threadPoolExecutor.allowCoreThreadTimeOut(true);
+        threadPoolExecutor.shutdown();
+        Thread.interrupted();
+        Thread.currentThread().interrupt();
+        Thread.currentThread().stop();
         return "true";
     }
 
@@ -76,18 +78,17 @@ public class TestController {
 
 
     private void testxiancheng() {
-
-
         for (int i = 0; i < 10; i++) {
             threadPoolExecutor.execute(() -> {
                 System.out.println(Thread.currentThread().getName() + "执行中");
                 try {
-                    Thread.sleep(1000 * 10);
+                    Thread.sleep(1000 * 30);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
             });
         }
+
     }
 
 

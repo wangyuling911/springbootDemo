@@ -4,6 +4,8 @@ import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.*;
 import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.context.ApplicationEvent;
+import org.springframework.context.ApplicationListener;
 import org.springframework.context.SmartLifecycle;
 import org.springframework.stereotype.Service;
 
@@ -15,9 +17,11 @@ import javax.annotation.PostConstruct;
  * @author wangyuling
  */
 //@Service
+    //SmartInitializingSingleton   这个是干啥的
 public class GouService implements InitializingBean, DisposableBean, SmartLifecycle,
         CommandLineRunner, BeanNameAware, BeanClassLoaderAware, BeanFactoryAware
-        , BeanPostProcessor {
+        , BeanPostProcessor ,SmartInitializingSingleton, ApplicationListener
+{
 
 
 
@@ -82,5 +86,15 @@ public class GouService implements InitializingBean, DisposableBean, SmartLifecy
     public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
         System.out.println("GouService  BeanPostProcessor postProcessAfterInitialization()");
         return null;
+    }
+
+    @Override
+    public void afterSingletonsInstantiated() {
+
+    }
+
+    @Override
+    public void onApplicationEvent(ApplicationEvent event) {
+
     }
 }
