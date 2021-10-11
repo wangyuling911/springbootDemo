@@ -50,10 +50,7 @@ public class KafkaProducer {
         String obj2String = JSONObject.toJSONString(obj);
         log.info("准备发送消息为：{}", obj2String);
         //发送消息
-        List<PartitionInfo> partitionInfos = kafkaTemplate.partitionsFor(TOPIC_TEST);
-        MessageConverter messageConverter = kafkaTemplate.getMessageConverter();
-        System.out.println(partitionInfos.toString());
-        for (int i = 0; i < 6; i++) {
+        for (int i = 0; i < 3; i++) {
             ListenableFuture<SendResult<String, Object>> future = kafkaTemplate.send(TOPIC_TEST,0,"wang0", obj2String+i);
         }
 
