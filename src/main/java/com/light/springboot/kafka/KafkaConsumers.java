@@ -46,7 +46,7 @@ public class KafkaConsumers {
         Properties props = new Properties();
         props.put("bootstrap.servers", "localhost:9092");
         props.put("group.id", KafkaProducer.TOPIC_GROUP1);
-        props.put("enable.auto.commit", "false");
+        props.put("enable.auto.commit", "true");
         props.put("auto.commit.interval.ms", "2000");
         props.put("key.deserializer", "org.apache.kafka.common.serialization.StringDeserializer");
         props.put("value.deserializer", "org.apache.kafka.common.serialization.StringDeserializer");
@@ -54,6 +54,7 @@ public class KafkaConsumers {
         consumer.subscribe(Arrays.asList(KafkaProducer.TOPIC_TEST));
         while (true) {
             ConsumerRecords<String, String> records = consumer.poll(100);
+
             for (ConsumerRecord<String, String> record : records)
                 System.out.printf("offset = %d, key = %s, value = %s%n", record.offset(), record.key(), record.value());
         }
@@ -64,7 +65,7 @@ public class KafkaConsumers {
 
     @KafkaListener(topics = KafkaProducer.TOPIC_TEST, groupId = KafkaProducer.TOPIC_GROUP1)
     public void topic_test(ConsumerRecord<?, ?> record,
-                           //Acknowledgment ack,
+                           Acknowledgment ack,
                            @Header(KafkaHeaders.RECEIVED_TOPIC) String topic) throws Exception {
         Optional message = Optional.ofNullable(record.value());
         Headers headers = record.headers();

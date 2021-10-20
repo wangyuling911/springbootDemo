@@ -1,5 +1,6 @@
 package com.light.springboot.controller;
 
+import java.util.concurrent.DelayQueue;
 import java.util.concurrent.Delayed;
 import java.util.concurrent.LinkedBlockingDeque;
 import java.util.concurrent.TimeUnit;
@@ -49,8 +50,10 @@ class MyDelayedTask implements Delayed {
     }
 
     public static void main(String[] args) throws InterruptedException {
-        LinkedBlockingDeque<Object> objects = new LinkedBlockingDeque<>();
-        Object take = objects.take();
-        System.out.println("over");
+        DelayQueue<Delayed> delayeds = new DelayQueue<>();
+        delayeds.add(new MyDelayedTask("wang", 10000));
+        Delayed take = delayeds.take();
+        System.out.println(take.toString());
+
     }
 }
