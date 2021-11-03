@@ -1,6 +1,7 @@
 package com.light.springboot.kafka;
 
 import lombok.extern.slf4j.Slf4j;
+import org.apache.kafka.clients.consumer.Consumer;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.apache.kafka.clients.consumer.ConsumerRecords;
 import org.apache.kafka.clients.consumer.KafkaConsumer;
@@ -14,9 +15,12 @@ import org.springframework.kafka.support.KafkaHeaders;
 import org.springframework.messaging.handler.annotation.Header;
 import org.springframework.stereotype.Component;
 
+import java.time.Duration;
 import java.util.Arrays;
 import java.util.Optional;
 import java.util.Properties;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  * 类功能描述：<br>
@@ -42,27 +46,40 @@ public class KafkaConsumers {
     @Autowired
     private KafkaTemplate<String, Object> kafkaTemplate;
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
+        Logger.getLogger("org.apache.kafka.clients.consumer").setLevel(Level.INFO);
         Properties props = new Properties();
         props.put("bootstrap.servers", "localhost:9092");
         props.put("group.id", KafkaProducer.TOPIC_GROUP1);
-        props.put("enable.auto.commit", "false");
-        props.put("auto.commit.interval.ms", "2000");
+        props.put("enable.auto.commit", "true");
+        props.put("auto.commit.interval.ms", "1000");
         props.put("key.deserializer", "org.apache.kafka.common.serialization.StringDeserializer");
         props.put("value.deserializer", "org.apache.kafka.common.serialization.StringDeserializer");
         KafkaConsumer<String, String> consumer = new KafkaConsumer<>(props);
         consumer.subscribe(Arrays.asList(KafkaProducer.TOPIC_TEST));
+        long l =  System.currentTimeMillis();
+
         while (true) {
-            ConsumerRecords<String, String> records = consumer.poll(100);
-            for (ConsumerRecord<String, String> record : records)
+            ConsumerRecords<String, String> records = consumer.poll(6000);
+            long k = System.currentTimeMillis() ;
+            System.out.println("beijing" + (k-l));
+            l = k;
+            for (ConsumerRecord<String, String> record : records) {
                 System.out.printf("offset = %d, key = %s, value = %s%n", record.offset(), record.key(), record.value());
+                Thread.sleep(30000);
+            }
         }
+
+
+
+
+
 
 
     }
 
 
-    @KafkaListener(topics = KafkaProducer.TOPIC_TEST, groupId = KafkaProducer.TOPIC_GROUP1)
+    // @KafkaListener(topics = KafkaProducer.TOPIC_TEST, groupId = KafkaProducer.TOPIC_GROUP1)
     public void topic_test(ConsumerRecord<?, ?> record,
                            //Acknowledgment ack,
                            @Header(KafkaHeaders.RECEIVED_TOPIC) String topic) throws Exception {
@@ -70,15 +87,15 @@ public class KafkaConsumers {
         Headers headers = record.headers();
         long offset = record.offset();
         System.out.println(message.get() + "fsdfas" + "------" + offset);
-        if (true) {
-            throw new Exception("wangwang");
-        }
 
         if (message.isPresent()) {
             Object msg = message.get();
             String name = Thread.currentThread().getName();
             System.out.println("topic_test sleep  前： Topic:" + topic + ",Message:" + msg + "线程名称" + name);
-            Thread.sleep(20000);
+//            for (int i = 0; i < 50; i++) {
+//                Thread.sleep(1000);
+//                System.out.println("休眠+++++++++++");
+//            }
             System.out.println("topic_test sleep 后： Topic:" + topic + ",Message:" + msg);
 //            ack.acknowledge();
 
