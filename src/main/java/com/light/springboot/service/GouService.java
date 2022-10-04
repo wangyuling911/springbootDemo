@@ -2,10 +2,11 @@ package com.light.springboot.service;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.*;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.boot.CommandLineRunner;
-import org.springframework.context.ApplicationEvent;
-import org.springframework.context.ApplicationListener;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.ApplicationContextAware;
 import org.springframework.context.SmartLifecycle;
 import org.springframework.stereotype.Service;
 
@@ -16,13 +17,22 @@ import javax.annotation.PostConstruct;
  *
  * @author wangyuling
  */
-//@Service
-    //SmartInitializingSingleton   这个是干啥的
-public class GouService implements InitializingBean, DisposableBean, SmartLifecycle,
-        CommandLineRunner, BeanNameAware, BeanClassLoaderAware, BeanFactoryAware
-        , BeanPostProcessor ,SmartInitializingSingleton, ApplicationListener
+@Service
+public class GouService implements  //属性赋值是具体的方法不是钩子函数
+        DisposableBean,
+        SmartLifecycle,
+        CommandLineRunner,//项目加载完时候
+        BeanNameAware, //设置bean名称
+        BeanClassLoaderAware,//可以设置
+        BeanFactoryAware,
+        BeanPostProcessor , //处理器 后置处理器 两个方法
+        InitializingBean,  //叫初始化
+        SmartInitializingSingleton,
+        ApplicationContextAware
 {
 
+    @Value("wang")
+    private String a;
 
 
     @Override
@@ -63,6 +73,8 @@ public class GouService implements InitializingBean, DisposableBean, SmartLifecy
 
     @Override
     public void setBeanName(String name) {
+        System.out.println("GouService  setBeanName run()");
+        System.out.println(this.a);
 
     }
 
@@ -94,7 +106,7 @@ public class GouService implements InitializingBean, DisposableBean, SmartLifecy
     }
 
     @Override
-    public void onApplicationEvent(ApplicationEvent event) {
+    public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
 
     }
 }

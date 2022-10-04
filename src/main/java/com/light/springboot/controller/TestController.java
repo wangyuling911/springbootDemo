@@ -1,5 +1,6 @@
 package com.light.springboot.controller;
 
+import com.google.common.collect.Lists;
 import com.light.springboot.service.JDBCService;
 import com.light.springboot.service.TestEvent;
 import lombok.extern.slf4j.Slf4j;
@@ -7,9 +8,12 @@ import lombok.var;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.context.event.EventListener;
+import org.springframework.http.HttpHeaders;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.util.*;
 import java.util.concurrent.Executors;
 import java.util.concurrent.LinkedBlockingQueue;
@@ -27,10 +31,9 @@ public class TestController {
 
     //
     @GetMapping("/helloworld")
-    public String helloworld() {
-        System.out.println("开始");
-        applicationEventPublisher.publishEvent(new TestEvent());
-        System.out.println("结束");
+    public String helloworld(HttpServletRequest request, HttpServletResponse response) {
+
+        System.out.println(request.getHeader("sign"));
         return "beijign";
     }
 
@@ -39,16 +42,13 @@ public class TestController {
         System.out.println("开始");
         jdbcService.setDepartmentMapper();
         System.out.println("结束");
+        Thread.sleep(55);
         return "beijign";
     }
 
     public static void main(String[] args) throws ClassNotFoundException {
-        int COUNT_BITS = Integer.SIZE - 3;
-        System.out.println(COUNT_BITS);
-
-        int RUNNING = -1 << COUNT_BITS;
-        System.out.println( Integer.toBinaryString(RUNNING));
-        System.out.println(Integer.toBinaryString(RUNNING | 0));
+        HashMap<Object, Object> map = new HashMap<>();
+        map.put("11","222");
     }
 
     @GetMapping("/helloworld3")

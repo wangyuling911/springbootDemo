@@ -23,6 +23,5 @@ public class JDBCService {
         department2.setId(1428571273269997569L);
         department2.setName("yu");
         departmentMapper.insert(department2);
-
     }
 }
