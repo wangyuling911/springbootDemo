@@ -2,7 +2,6 @@ package com.light.springboot.config;
 
 import com.light.springboot.Interceptor.TimeFilter;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import java.util.ArrayList;

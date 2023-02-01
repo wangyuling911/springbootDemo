@@ -17,6 +17,7 @@ public class MyThread {
         }
     }
 
+    @Test
     public void stopMy() {
         thread.interrupt();
     }
