@@ -1,24 +1,25 @@
 package com.light.springboot.controller;
 
 import com.google.common.collect.Lists;
-import com.google.common.util.concurrent.RateLimiter;
 import com.light.springboot.SocketMsg;
-import com.light.springboot.service.MyThread;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.BeanUtils;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.crypto.Mac;
+import javax.crypto.spec.SecretKeySpec;
+import javax.xml.bind.DatatypeConverter;
 import java.lang.management.GarbageCollectorMXBean;
 import java.lang.management.ManagementFactory;
 import java.lang.reflect.Method;
-import java.util.*;
+import java.security.InvalidKeyException;
+import java.security.NoSuchAlgorithmException;
+import java.util.List;
 
 @RestController
 @Slf4j
 public class TestController {
 
-    MyThread myThread;
 
     @GetMapping("/helloworld")
     public String helloworld(int s) {
@@ -55,12 +56,36 @@ public class TestController {
         return null;
     }
 
-    public static void main(String[] args) {
-        TestController testController = new TestController();
-        List<SocketMsg> objects = Lists.newArrayList();
-        objects.add(new SocketMsg());
-        testController.convert(objects, SocketMsg.class);
 
-    }
+	public static void main(String[] args) {
+		try {
+			String secret = "my-secret-key";
+			String message = "POST\n" +
+					"/app-hmac/user/get/encrypt/secret\n" +
+					"\n" +
+					"user-key\n" +
+					"Wed, 22 Mar 2023 07:51:58 GMT\n" +
+					"User-Agent:PostmanRuntime/7.31.3\n";
+
+			String message2 = "{\"email\": \"1134344850@qq.com\"}";
+
+
+			Mac hasher = Mac.getInstance("HmacSHA256");
+			hasher.init(new SecretKeySpec(secret.getBytes(), "HmacSHA256"));
+
+			byte[] hash = hasher.doFinal(message2.getBytes());
+
+			// to lowercase hexits
+			String s = DatatypeConverter.printHexBinary(hash);
+			System.out.println(s);
+
+			// to base64
+			String s1 = DatatypeConverter.printBase64Binary(hash);
+			System.out.println(s1);
+		} catch (NoSuchAlgorithmException e) {
+		} catch (InvalidKeyException e) {
+		}
+	}
+
 
 }

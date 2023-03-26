@@ -1,8 +1,14 @@
 package com.light.springboot.service;
 
+import com.google.common.collect.Lists;
 import lombok.SneakyThrows;
+import org.springframework.beans.factory.InitializingBean;
+import org.springframework.stereotype.Service;
 
-public class MyThread {
+import java.util.ArrayList;
+
+@Service
+public class MyThread implements InitializingBean {
 
     public int s;
     Thread thread;
@@ -17,9 +23,10 @@ public class MyThread {
         }
     }
 
-    @Test
-    public void stopMy() {
-        thread.interrupt();
-    }
 
+    @Override
+    public void afterPropertiesSet() throws Exception {
+
+        System.out.println("MyThread  加载完成 ");
+    }
 }
