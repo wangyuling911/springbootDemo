@@ -1,0 +1,1703 @@
+{
+  "_id": ObjectId("642158bd8046281a504321ad"),
+  "productKey": "1640274969049481218",
+  "status": "PUBLISHED",
+  "properties": [
+    {
+      "accessMode": "r",
+      "dataType": {
+        "type": "int",
+        "specs": {
+          "min": NumberInt("0"),
+          "max": NumberInt("100"),
+          "step": NumberInt("1"),
+          "unitType": "percentage",
+          "unit": "%"
+        }
+      },
+      "identifier": "1",
+      "name": "1640274976710283265",
+      "createTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "updateTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "createBy": "yimin.du/杜一民",
+      "updateBy": "yimin.du/杜一民"
+    },
+    {
+      "accessMode": "r",
+      "dataType": {
+        "type": "int",
+        "specs": {
+          "min": NumberInt("0"),
+          "max": NumberInt("100"),
+          "step": NumberInt("1"),
+          "unitType": "percentage",
+          "unit": "%"
+        }
+      },
+      "identifier": "2",
+      "name": "1640274976718671873",
+      "createTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "updateTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "createBy": "yimin.du/杜一民",
+      "updateBy": "yimin.du/杜一民"
+    },
+    {
+      "accessMode": "r",
+      "dataType": {
+        "type": "enum",
+        "specs": {
+          "22": NumberLong("1640274976735449089"),
+          "23": NumberLong("1640274976743837698"),
+          "24": NumberLong("1640274976752226306"),
+          "60": NumberLong("1640274976760614913"),
+          "50": NumberLong("1640274976769003522"),
+          "61": NumberLong("1640274976781586434"),
+          "40": NumberLong("1640274976789975042"),
+          "51": NumberLong("1640274976567676930"),
+          "30": NumberLong("1640274976576065538"),
+          "41": NumberLong("1640274976584454146"),
+          "20": NumberLong("1640274976592842754"),
+          "10": NumberLong("1640274976601231361"),
+          "21": NumberLong("1640274976609619970")
+        }
+      },
+      "identifier": "3",
+      "name": "1640274976727060482",
+      "createTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "updateTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "createBy": "yimin.du/杜一民",
+      "updateBy": "yimin.du/杜一民"
+    },
+    {
+      "accessMode": "r",
+      "dataType": {
+        "type": "int",
+        "specs": {
+          "min": NumberInt("0"),
+          "max": NumberInt("600"),
+          "step": NumberInt("1"),
+          "unitType": "unitTime",
+          "unit": "unitTimeSecond"
+        }
+      },
+      "identifier": "4",
+      "name": "1640274976618008578",
+      "createTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "updateTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "createBy": "yimin.du/杜一民",
+      "updateBy": "yimin.du/杜一民"
+    },
+    {
+      "accessMode": "r",
+      "dataType": {
+        "type": "int",
+        "specs": {
+          "min": NumberInt("0"),
+          "max": NumberInt("100"),
+          "step": NumberInt("1"),
+          "unitType": "unitLength",
+          "unit": "unitLengthM"
+        }
+      },
+      "identifier": "5",
+      "name": "1640274976634785793",
+      "createTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "updateTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "createBy": "yimin.du/杜一民",
+      "updateBy": "yimin.du/杜一民"
+    },
+    {
+      "accessMode": "r",
+      "dataType": {
+        "type": "int",
+        "specs": {
+          "min": NumberInt("0"),
+          "max": NumberInt("100"),
+          "step": NumberInt("1"),
+          "unitType": "unitTime",
+          "unit": "unitTimeSecond"
+        }
+      },
+      "identifier": "6",
+      "name": "1640274976651563010",
+      "createTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "updateTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "createBy": "yimin.du/杜一民",
+      "updateBy": "yimin.du/杜一民"
+    },
+    {
+      "accessMode": "r",
+      "dataType": {
+        "type": "int",
+        "specs": {
+          "min": NumberInt("0"),
+          "max": NumberInt("100"),
+          "step": NumberInt("1"),
+          "unitType": "unitTime",
+          "unit": "unitTimeSecond"
+        }
+      },
+      "identifier": "7",
+      "name": "1640274976668340225",
+      "createTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "updateTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "createBy": "yimin.du/杜一民",
+      "updateBy": "yimin.du/杜一民"
+    },
+    {
+      "accessMode": "r",
+      "dataType": {
+        "type": "int",
+        "specs": {
+          "min": NumberInt("0"),
+          "max": NumberInt("100"),
+          "step": NumberInt("1"),
+          "unitType": "unitTime",
+          "unitName": "秒",
+          "unit": "unitTimeSecond"
+        }
+      },
+      "identifier": "8",
+      "name": "1640274976815140866",
+      "createTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "updateTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "createBy": "yimin.du/杜一民",
+      "updateBy": "yimin.du/杜一民"
+    },
+    {
+      "accessMode": "r",
+      "dataType": {
+        "type": "int",
+        "specs": {
+          "min": NumberInt("0"),
+          "max": NumberInt("100"),
+          "step": NumberInt("1"),
+          "unitType": "unitTime",
+          "unitName": "秒",
+          "unit": "unitTimeSecond"
+        }
+      },
+      "identifier": "9",
+      "name": "1640274976831918081",
+      "createTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "updateTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "createBy": "yimin.du/杜一民",
+      "updateBy": "yimin.du/杜一民"
+    },
+    {
+      "accessMode": "r",
+      "dataType": {
+        "type": "int",
+        "specs": {
+          "min": NumberInt("0"),
+          "max": NumberInt("100"),
+          "step": NumberInt("1"),
+          "unitType": "unitTime",
+          "unitName": "秒",
+          "unit": "unitTimeSecond"
+        }
+      },
+      "identifier": "10",
+      "name": "1640274976840306690",
+      "createTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "updateTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "createBy": "yimin.du/杜一民",
+      "updateBy": "yimin.du/杜一民"
+    },
+    {
+      "accessMode": "r",
+      "dataType": {
+        "type": "int",
+        "specs": {
+          "min": NumberInt("0"),
+          "max": NumberInt("100"),
+          "step": NumberInt("1"),
+          "unitType": "percentage",
+          "unitName": "百分比",
+          "unit": "%"
+        }
+      },
+      "identifier": "11",
+      "name": "1640274976848695297",
+      "createTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "updateTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "createBy": "yimin.du/杜一民",
+      "updateBy": "yimin.du/杜一民"
+    },
+    {
+      "accessMode": "r",
+      "dataType": {
+        "type": "int",
+        "specs": {
+          "min": NumberInt("0"),
+          "max": NumberInt("100"),
+          "step": NumberInt("1"),
+          "unitType": "unitEnergyConsumption ",
+          "unitName": "安/时",
+          "unit": " unitEnergyConsumptionAH"
+        }
+      },
+      "identifier": "12",
+      "name": "1640274976857083905",
+      "createTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "updateTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "createBy": "yimin.du/杜一民",
+      "updateBy": "yimin.du/杜一民"
+    },
+    {
+      "accessMode": "r",
+      "dataType": {
+        "type": "int",
+        "specs": {
+          "min": NumberInt("0"),
+          "max": NumberInt("100"),
+          "step": NumberInt("1"),
+          "unitType": "unitEnergyConsumption ",
+          "unitName": "安/时",
+          "unit": " unitEnergyConsumptionAH"
+        }
+      },
+      "identifier": "13",
+      "name": "1640274976865472513",
+      "createTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "updateTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "createBy": "yimin.du/杜一民",
+      "updateBy": "yimin.du/杜一民"
+    },
+    {
+      "accessMode": "r",
+      "dataType": {
+        "type": "String"
+      },
+      "comments": "设备IP地址",
+      "identifier": "14",
+      "name": "1640274976882249730",
+      "createTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "updateTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "createBy": "yimin.du/杜一民",
+      "updateBy": "yimin.du/杜一民"
+    },
+    {
+      "accessMode": "r",
+      "dataType": {
+        "type": "int",
+        "specs": {
+          "min": NumberInt("0"),
+          "max": NumberInt("999999"),
+          "step": NumberInt("1"),
+          "unitType": "unitTime",
+          "unitName": "小时",
+          "unit": "unitTimeHour"
+        }
+      },
+      "comments": "总充电时长",
+      "identifier": "15",
+      "name": "1640274976899026946",
+      "createTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "updateTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "createBy": "yimin.du/杜一民",
+      "updateBy": "yimin.du/杜一民"
+    },
+    {
+      "accessMode": "r",
+      "dataType": {
+        "type": "int",
+        "specs": {
+          "min": NumberInt("0"),
+          "max": NumberInt("999999"),
+          "step": NumberInt("1"),
+          "unitType": "unitWeight",
+          "unitName": "克",
+          "unit": "unitWeightGram"
+        }
+      },
+      "comments": "二氧化碳节省量",
+      "identifier": "16",
+      "name": "1640274976907415554",
+      "createTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "updateTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "createBy": "yimin.du/杜一民",
+      "updateBy": "yimin.du/杜一民"
+    },
+    {
+      "accessMode": "r",
+      "dataType": {
+        "type": "int",
+        "specs": {
+          "min": NumberInt("0"),
+          "max": NumberInt("999999"),
+          "step": NumberInt("1"),
+          "unitType": "unitTime",
+          "unitName": "分",
+          "unit": "unitTimeMinute"
+        }
+      },
+      "comments": "预计充电时间",
+      "identifier": "17",
+      "name": "1640274976924192770",
+      "createTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "updateTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "createBy": "yimin.du/杜一民",
+      "updateBy": "yimin.du/杜一民"
+    },
+    {
+      "accessMode": "r",
+      "dataType": {
+        "type": "enum",
+        "specs": {
+          "1": NumberLong("1640274978685800450"),
+          "2": NumberLong("1640274978518028289")
+        }
+      },
+      "comments": "度量单位",
+      "identifier": "18",
+      "name": "1640274976991301633",
+      "createTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "updateTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "createBy": "yimin.du/杜一民",
+      "updateBy": "yimin.du/杜一民"
+    }
+  ],
+  "events": [
+    {
+      "type": "error",
+      "outputData": [
+        {
+          "dataType": {
+            "type": "enum",
+            "specs": {
+              "100000": NumberLong("1640274977062604802"),
+              "200106": NumberLong("1640274977079382018"),
+              "200105": NumberLong("1640274977087770625"),
+              "200025": NumberLong("1640274977096159234"),
+              "200102": NumberLong("1640274977112936450"),
+              "200024": NumberLong("1640274977192628226"),
+              "200101": NumberLong("1640274977201016834"),
+              "200027": NumberLong("1640274977209405441"),
+              "200104": NumberLong("1640274977226182658"),
+              "200026": NumberLong("1640274977234571266"),
+              "200103": NumberLong("1640274977242959874"),
+              "200010": NumberLong("1640274977268125698"),
+              "200012": NumberLong("1640274977276514306"),
+              "200011": NumberLong("1640274977301680130"),
+              "200018": NumberLong("1640274977310068738"),
+              "200017": NumberLong("1640274977381371905"),
+              "200019": NumberLong("1640274977393954817"),
+              "200014": NumberLong("1640274977402343426"),
+              "200013": NumberLong("1640274977423314945"),
+              "200016": NumberLong("1640274977440092161"),
+              "200015": NumberLong("1640274977448480770"),
+              "200021": NumberLong("1640274977456869378"),
+              "200020": NumberLong("1640274977482035202"),
+              "200001": NumberLong("1640274977490423809"),
+              "200023": NumberLong("1640274977498812417"),
+              "200100": NumberLong("1640274977595281409"),
+              "200000": NumberLong("1640274977603670018"),
+              "200022": NumberLong("1640274977612058626")
+            }
+          },
+          "identifier": "1",
+          "name": "1640274977054216194",
+          "createTime": ISODate("2023-03-27T08:17:52.25Z")
+        }
+      ],
+      "identifier": "38",
+      "name": "1640274977037438978",
+      "createTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "updateTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "createBy": "yimin.du/杜一民",
+      "updateBy": "yimin.du/杜一民"
+    }
+  ],
+  "services": [
+    {
+      "comments": "开始执行割草",
+      "callType": "sync",
+      "inputData": [
+        {
+          "dataType": {
+            "type": "bool",
+            "specs": {
+              "0": NumberLong("1640274978643857410"),
+              "1": NumberLong("1640274978673217537")
+            }
+          },
+          "identifier": "1",
+          "name": "1640274976798363649",
+          "createTime": ISODate("2023-03-27T07:24:07.747Z")
+        }
+      ],
+      "outputData": [
+        {
+          "dataType": {
+            "type": "bool",
+            "specs": {
+              "0": NumberLong("1640274978664828929"),
+              "1": NumberLong("1640274978685800450")
+            }
+          },
+          "identifier": "1",
+          "name": "1640274976437653505",
+          "createTime": ISODate("2023-03-27T07:24:07.747Z")
+        }
+      ],
+      "identifier": "19",
+      "name": "1640274978627080193",
+      "createTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "updateTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "createBy": "yimin.du/杜一民",
+      "updateBy": "yimin.du/杜一民"
+    },
+    {
+      "callType": "sync",
+      "inputData": [
+        {
+          "dataType": {
+            "type": "bool",
+            "specs": {
+              "0": NumberLong("1640274978643857410"),
+              "1": NumberLong("1640274978673217537")
+            }
+          },
+          "identifier": "1",
+          "name": "1640274976798363649",
+          "createTime": ISODate("2023-03-27T07:25:07.439Z")
+        }
+      ],
+      "outputData": [
+        {
+          "dataType": {
+            "type": "bool",
+            "specs": {
+              "0": NumberLong("1640274978664828929"),
+              "1": NumberLong("1640274978685800450")
+            }
+          },
+          "identifier": "1",
+          "name": "1640274976437653505",
+          "createTime": ISODate("2023-03-27T07:25:07.439Z")
+        }
+      ],
+      "identifier": "20",
+      "name": "1640274976982913025",
+      "createTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "updateTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "createBy": "yimin.du/杜一民",
+      "updateBy": "yimin.du/杜一民"
+    },
+    {
+      "callType": "sync",
+      "inputData": [
+        {
+          "dataType": {
+            "type": "bool",
+            "specs": {
+              "0": NumberLong("1640274978643857410"),
+              "1": NumberLong("1640274978673217537")
+            }
+          },
+          "identifier": "1",
+          "name": "1640274976798363649",
+          "createTime": ISODate("2023-03-27T07:25:53.601Z")
+        }
+      ],
+      "outputData": [
+        {
+          "dataType": {
+            "type": "bool",
+            "specs": {
+              "0": NumberLong("1640274978664828929"),
+              "1": NumberLong("1640274978685800450")
+            }
+          },
+          "identifier": "1",
+          "name": "1640274976437653505",
+          "createTime": ISODate("2023-03-27T07:25:53.601Z")
+        }
+      ],
+      "identifier": "21",
+      "name": "1640274977217794050",
+      "createTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "updateTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "createBy": "yimin.du/杜一民",
+      "updateBy": "yimin.du/杜一民"
+    },
+    {
+      "callType": "async",
+      "inputData": [
+        {
+          "dataType": {
+            "type": "enum",
+            "specs": {
+              "0": NumberLong("1640274978643857410"),
+              "1": NumberLong("1640274978673217537"),
+              "2": NumberLong("1640274978518028289")
+            }
+          },
+          "identifier": "1",
+          "name": "1640274976450236417",
+          "createTime": ISODate("2023-03-27T07:27:44.437Z")
+        }
+      ],
+      "outputData": [
+        {
+          "dataType": {
+            "type": "enum",
+            "specs": {
+              "0": NumberLong("1640274978664828929"),
+              "1": NumberLong("1640274978685800450"),
+              "2": NumberLong("1640274978434142209")
+            }
+          },
+          "identifier": "1",
+          "name": "1640274976437653505",
+          "createTime": ISODate("2023-03-27T07:27:44.437Z")
+        }
+      ],
+      "identifier": "22",
+      "name": "1640274977989545985",
+      "createTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "updateTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "createBy": "yimin.du/杜一民",
+      "updateBy": "yimin.du/杜一民"
+    },
+    {
+      "callType": "sync",
+      "inputData": [
+        {
+          "dataType": {
+            "type": "int",
+            "specs": {
+              "min": NumberInt("1"),
+              "max": NumberInt("15"),
+              "step": NumberInt("1"),
+              "unitType": "unitLength",
+              "unitName": "厘米",
+              "unit": "unitLengthCm"
+            }
+          },
+          "identifier": "1",
+          "name": "1640274976450236417",
+          "createTime": ISODate("2023-03-27T07:28:39.837Z")
+        }
+      ],
+      "outputData": [
+        {
+          "dataType": {
+            "type": "int",
+            "specs": {
+              "min": NumberInt("1"),
+              "max": NumberInt("15"),
+              "step": NumberInt("1"),
+              "unitType": "unitLength",
+              "unitName": "厘米",
+              "unit": "unitLengthCm"
+            }
+          },
+          "identifier": "1",
+          "name": "1640274976437653505",
+          "createTime": ISODate("2023-03-27T07:28:39.837Z")
+        }
+      ],
+      "identifier": "23",
+      "name": "1640274977763053570",
+      "createTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "updateTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "createBy": "yimin.du/杜一民",
+      "updateBy": "yimin.du/杜一民"
+    },
+    {
+      "callType": "sync",
+      "inputData": [
+        {
+          "dataType": {
+            "type": "bool",
+            "specs": {
+              "0": NumberLong("1640274978643857410"),
+              "1": NumberLong("1640274978673217537")
+            }
+          },
+          "identifier": "1",
+          "name": "1640274977410732034",
+          "createTime": ISODate("2023-03-27T07:29:36.732Z")
+        }
+      ],
+      "outputData": [
+        {
+          "dataType": {
+            "type": "bool",
+            "specs": {
+              "0": NumberLong("1640274978664828929"),
+              "1": NumberLong("1640274978685800450")
+            }
+          },
+          "identifier": "2",
+          "name": "1640274976966135810",
+          "createTime": ISODate("2023-03-27T07:29:36.732Z")
+        }
+      ],
+      "identifier": "24",
+      "name": "1640274978207649794",
+      "createTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "updateTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "createBy": "yimin.du/杜一民",
+      "updateBy": "yimin.du/杜一民"
+    },
+    {
+      "callType": "sync",
+      "inputData": [
+        {
+          "dataType": {
+            "type": "enum",
+            "specs": {
+              "1": NumberLong("1640274978673217537"),
+              "2": NumberLong("1640274978518028289")
+            }
+          },
+          "identifier": "1",
+          "name": "1640274976450236417",
+          "createTime": ISODate("2023-03-27T07:30:53.043Z")
+        }
+      ],
+      "outputData": [
+        {
+          "dataType": {
+            "type": "enum",
+            "specs": {
+              "1": NumberLong("1640274978685800450"),
+              "2": NumberLong("1640274978434142209")
+            }
+          },
+          "identifier": "1",
+          "name": "1640274977746276353",
+          "createTime": ISODate("2023-03-27T07:30:53.043Z")
+        }
+      ],
+      "identifier": "25",
+      "name": "1640274977293291521",
+      "createTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "updateTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "createBy": "yimin.du/杜一民",
+      "updateBy": "yimin.du/杜一民"
+    },
+    {
+      "callType": "sync",
+      "inputData": [
+        {
+          "dataType": {
+            "type": "enum",
+            "specs": {
+              "0": NumberLong("1640274978643857410")
+            }
+          },
+          "identifier": "1",
+          "name": "1640274977867911170",
+          "createTime": ISODate("2023-03-27T07:31:50.267Z")
+        }
+      ],
+      "outputData": [
+        {
+          "dataType": {
+            "type": "enum",
+            "specs": {
+              "0": NumberLong("1640274978664828929")
+            }
+          },
+          "identifier": "2",
+          "name": "1640274977830162433",
+          "createTime": ISODate("2023-03-27T07:31:50.267Z")
+        }
+      ],
+      "identifier": "26",
+      "name": "1640274976546705410",
+      "createTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "updateTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "createBy": "yimin.du/杜一民",
+      "updateBy": "yimin.du/杜一民"
+    },
+    {
+      "callType": "sync",
+      "inputData": [
+        {
+          "dataType": {
+            "type": "int",
+            "specs": {
+              "min": NumberInt("20"),
+              "max": NumberInt("90"),
+              "step": NumberInt("1"),
+              "unitType": "unitLength",
+              "unitName": "米",
+              "unit": "unitLengthM"
+            }
+          },
+          "identifier": "1",
+          "name": "1640274976450236417",
+          "createTime": ISODate("2023-03-27T07:32:46.614Z")
+        }
+      ],
+      "outputData": [
+        {
+          "dataType": {
+            "type": "int",
+            "specs": {
+              "min": NumberInt("20"),
+              "max": NumberInt("90"),
+              "step": NumberInt("1"),
+              "unitType": "unitLength",
+              "unitName": "米",
+              "unit": "unitLengthM"
+            }
+          },
+          "identifier": "1",
+          "name": "1640274976437653505",
+          "createTime": ISODate("2023-03-27T07:32:46.614Z")
+        }
+      ],
+      "identifier": "27",
+      "name": "1640274977796608002",
+      "createTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "updateTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "createBy": "yimin.du/杜一民",
+      "updateBy": "yimin.du/杜一民"
+    },
+    {
+      "callType": "sync",
+      "inputData": [
+        {
+          "dataType": {
+            "type": "bool",
+            "specs": {
+              "0": NumberLong("1640274978643857410"),
+              "1": NumberLong("1640274978673217537")
+            }
+          },
+          "identifier": "1",
+          "name": "1640274976798363649",
+          "createTime": ISODate("2023-03-27T08:00:47.718Z")
+        }
+      ],
+      "outputData": [
+        {
+          "dataType": {
+            "type": "bool",
+            "specs": {
+              "0": NumberLong("1640274978664828929"),
+              "1": NumberLong("1640274978685800450")
+            }
+          },
+          "identifier": "1",
+          "name": "1640274976437653505",
+          "createTime": ISODate("2023-03-27T08:00:47.718Z")
+        }
+      ],
+      "identifier": "28",
+      "name": "1640274976974524417",
+      "createTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "updateTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "createBy": "yimin.du/杜一民",
+      "updateBy": "yimin.du/杜一民"
+    },
+    {
+      "callType": "sync",
+      "inputData": [
+        {
+          "dataType": {
+            "type": "bool",
+            "specs": {
+              "0": NumberLong("1640274978643857410"),
+              "1": NumberLong("1640274978673217537")
+            }
+          },
+          "identifier": "1",
+          "name": "1640274977729499137",
+          "createTime": ISODate("2023-03-27T08:02:36.942Z")
+        }
+      ],
+      "outputData": [
+        {
+          "dataType": {
+            "type": "bool",
+            "specs": {
+              "0": NumberLong("1640274978664828929"),
+              "1": NumberLong("1640274978685800450")
+            }
+          },
+          "identifier": "2",
+          "name": "1640274976957747201",
+          "createTime": ISODate("2023-03-27T08:02:36.942Z")
+        }
+      ],
+      "identifier": "29",
+      "name": "1640274976823529473",
+      "createTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "updateTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "createBy": "yimin.du/杜一民",
+      "updateBy": "yimin.du/杜一民"
+    },
+    {
+      "callType": "sync",
+      "inputData": [
+        {
+          "dataType": {
+            "type": "bool",
+            "specs": {
+              "0": NumberLong("1640274978643857410"),
+              "1": NumberLong("1640274978673217537")
+            }
+          },
+          "identifier": "1",
+          "name": "1640274976798363649",
+          "createTime": ISODate("2023-03-27T08:03:35.435Z")
+        }
+      ],
+      "outputData": [
+        {
+          "dataType": {
+            "type": "bool",
+            "specs": {
+              "0": NumberLong("1640274978664828929"),
+              "1": NumberLong("1640274978685800450")
+            }
+          },
+          "identifier": "1",
+          "name": "1640274976437653505",
+          "createTime": ISODate("2023-03-27T08:03:35.435Z")
+        }
+      ],
+      "identifier": "30",
+      "name": "1640274977691750402",
+      "createTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "updateTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "createBy": "yimin.du/杜一民",
+      "updateBy": "yimin.du/杜一民"
+    },
+    {
+      "callType": "sync",
+      "inputData": [
+        {
+          "dataType": {
+            "type": "bool",
+            "specs": {
+              "0": NumberLong("1640274978643857410"),
+              "1": NumberLong("1640274978673217537")
+            }
+          },
+          "identifier": "1",
+          "name": "1640274976798363649",
+          "createTime": ISODate("2023-03-27T08:04:27.749Z")
+        }
+      ],
+      "outputData": [
+        {
+          "dataType": {
+            "type": "bool",
+            "specs": {
+              "0": NumberLong("1640274978664828929"),
+              "1": NumberLong("1640274978685800450")
+            }
+          },
+          "identifier": "1",
+          "name": "1640274976437653505",
+          "createTime": ISODate("2023-03-27T08:04:27.749Z")
+        }
+      ],
+      "identifier": "31",
+      "name": "1640274977930825729",
+      "createTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "updateTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "createBy": "yimin.du/杜一民",
+      "updateBy": "yimin.du/杜一民"
+    },
+    {
+      "callType": "sync",
+      "inputData": [
+        {
+          "dataType": {
+            "type": "bool",
+            "specs": {
+              "0": NumberLong("1640274978643857410"),
+              "1": NumberLong("1640274978673217537")
+            }
+          },
+          "identifier": "1",
+          "name": "1640274976798363649",
+          "createTime": ISODate("2023-03-27T08:06:41.878Z")
+        }
+      ],
+      "outputData": [
+        {
+          "dataType": {
+            "type": "bool",
+            "specs": {
+              "0": NumberLong("1640274978664828929"),
+              "1": NumberLong("1640274978685800450")
+            }
+          },
+          "identifier": "1",
+          "name": "1640274976437653505",
+          "createTime": ISODate("2023-03-27T08:06:41.878Z")
+        }
+      ],
+      "identifier": "32",
+      "name": "1640274977326845953",
+      "createTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "updateTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "createBy": "yimin.du/杜一民",
+      "updateBy": "yimin.du/杜一民"
+    },
+    {
+      "callType": "sync",
+      "inputData": [
+        {
+          "dataType": {
+            "type": "enum",
+            "specs": {
+              "1": NumberLong("1640274978673217537"),
+              "2": NumberLong("1640274978518028289"),
+              "3": NumberLong("1640274978157318146")
+            }
+          },
+          "identifier": "1",
+          "name": "1640274977473646594",
+          "createTime": ISODate("2023-03-27T08:10:36.849Z")
+        }
+      ],
+      "outputData": [
+        {
+          "dataType": {
+            "type": "enum",
+            "specs": {
+              "1": NumberLong("1640274978685800450"),
+              "2": NumberLong("1640274978434142209"),
+              "3": NumberLong("1640274978413170690")
+            }
+          },
+          "identifier": "2",
+          "name": "1640274978354450434",
+          "createTime": ISODate("2023-03-27T08:10:36.849Z")
+        }
+      ],
+      "identifier": "33",
+      "name": "1640274976550899713",
+      "createTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "updateTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "createBy": "yimin.du/杜一民",
+      "updateBy": "yimin.du/杜一民"
+    },
+    {
+      "callType": "async",
+      "inputData": [
+        {
+          "dataType": {
+            "type": "bool",
+            "specs": {
+              "0": NumberLong("1640274978643857410"),
+              "1": NumberLong("1640274978673217537")
+            }
+          },
+          "identifier": "1",
+          "name": "1640274978295730177",
+          "createTime": ISODate("2023-03-27T08:12:40.286Z")
+        }
+      ],
+      "outputData": [
+        {
+          "dataType": {
+            "type": "bool",
+            "specs": {
+              "0": NumberLong("1640274978664828929"),
+              "1": NumberLong("1640274978685800450")
+            }
+          },
+          "identifier": "2",
+          "name": "1640274978224427009",
+          "createTime": ISODate("2023-03-27T08:12:40.286Z")
+        }
+      ],
+      "identifier": "34",
+      "name": "1640274978388004866",
+      "createTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "updateTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "createBy": "yimin.du/杜一民",
+      "updateBy": "yimin.du/杜一民"
+    },
+    {
+      "callType": "sync",
+      "inputData": [
+        {
+          "dataType": {
+            "type": "enum",
+            "specs": {
+              "0": NumberLong("1640274978643857410"),
+              "1": NumberLong("1640274978673217537"),
+              "2": NumberLong("1640274978518028289"),
+              "3": NumberLong("1640274978157318146"),
+              "4": NumberLong("1640274976659951618")
+            }
+          },
+          "identifier": "1",
+          "name": "1640274977364594690",
+          "createTime": ISODate("2023-03-27T08:14:29.372Z")
+        }
+      ],
+      "outputData": [
+        {
+          "dataType": {
+            "type": "enum",
+            "specs": {
+              "0": NumberLong("1640274978664828929"),
+              "1": NumberLong("1640274978685800450"),
+              "2": NumberLong("1640274978434142209"),
+              "3": NumberLong("1640274978413170690"),
+              "4": NumberLong("1640274978681606145")
+            }
+          },
+          "identifier": "1",
+          "name": "1640274976437653505",
+          "createTime": ISODate("2023-03-27T08:14:29.372Z")
+        }
+      ],
+      "identifier": "35",
+      "name": "1640274977557532674",
+      "createTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "updateTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "createBy": "yimin.du/杜一民",
+      "updateBy": "yimin.du/杜一民"
+    },
+    {
+      "callType": "async",
+      "inputData": [
+        {
+          "dataType": {
+            "type": "int",
+            "specs": {
+              "min": NumberInt("0"),
+              "max": NumberInt("100"),
+              "step": NumberInt("1"),
+              "unitType": "unitLength",
+              "unitName": "米",
+              "unit": "unitLengthM"
+            }
+          },
+          "identifier": "1",
+          "name": "1640274978618691586",
+          "createTime": ISODate("2023-03-27T08:15:34.532Z")
+        }
+      ],
+      "outputData": [
+        {
+          "dataType": {
+            "type": "int",
+            "specs": {
+              "min": NumberInt("0"),
+              "max": NumberInt("100"),
+              "step": NumberInt("1"),
+              "unitType": "unitLength",
+              "unitName": "米",
+              "unit": "unitLengthM"
+            }
+          },
+          "identifier": "2",
+          "name": "1640274978492862465",
+          "createTime": ISODate("2023-03-27T08:15:34.532Z")
+        }
+      ],
+      "identifier": "36",
+      "name": "1640274978266370049",
+      "createTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "updateTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "createBy": "yimin.du/杜一民",
+      "updateBy": "yimin.du/杜一民"
+    },
+    {
+      "callType": "sync",
+      "inputData": [
+        {
+          "dataType": {
+            "type": "bool",
+            "specs": {
+              "0": NumberLong("1640274978643857410"),
+              "1": NumberLong("1640274978673217537")
+            }
+          },
+          "identifier": "1",
+          "name": "1640274976798363649",
+          "createTime": ISODate("2023-03-27T08:16:40.078Z")
+        }
+      ],
+      "outputData": [
+        {
+          "dataType": {
+            "type": "bool",
+            "specs": {
+              "0": NumberLong("1640274978664828929"),
+              "1": NumberLong("1640274978685800450")
+            }
+          },
+          "identifier": "1",
+          "name": "1640274976437653505",
+          "createTime": ISODate("2023-03-27T08:16:40.078Z")
+        }
+      ],
+      "identifier": "37",
+      "name": "1640274977641418753",
+      "createTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "updateTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "createBy": "yimin.du/杜一民",
+      "updateBy": "yimin.du/杜一民"
+    },
+    {
+      "callType": "async",
+      "inputData": [
+        {
+          "dataType": {
+            "type": "bool",
+            "specs": {
+              "0": NumberLong("1640274978643857410"),
+              "1": NumberLong("1640274978673217537")
+            }
+          },
+          "identifier": "1",
+          "name": "1640274977121325057",
+          "createTime": ISODate("2023-03-27T08:18:23.326Z")
+        }
+      ],
+      "outputData": [
+        {
+          "dataType": {
+            "type": "bool",
+            "specs": {
+              "0": NumberLong("1640274978664828929"),
+              "1": NumberLong("1640274978685800450")
+            }
+          },
+          "identifier": "2",
+          "name": "1640274977523978242",
+          "createTime": ISODate("2023-03-27T08:18:23.326Z")
+        }
+      ],
+      "identifier": "39",
+      "name": "1640274977708527617",
+      "createTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "updateTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "createBy": "yimin.du/杜一民",
+      "updateBy": "yimin.du/杜一民"
+    },
+    {
+      "callType": "sync",
+      "inputData": [
+        {
+          "dataType": {
+            "type": "int",
+            "specs": {
+              "min": NumberInt("0"),
+              "max": NumberInt("9999"),
+              "step": NumberInt("1"),
+              "unitType": "unitLength",
+              "unitName": "厘米",
+              "unit": "unitLengthCm"
+            }
+          },
+          "identifier": "1",
+          "name": "1640274976450236417",
+          "createTime": ISODate("2023-03-27T08:19:15.792Z")
+        }
+      ],
+      "outputData": [
+        {
+          "dataType": {
+            "type": "int",
+            "specs": {
+              "min": NumberInt("0"),
+              "max": NumberInt("9999"),
+              "step": NumberInt("1"),
+              "unitType": "unitLength",
+              "unitName": "厘米",
+              "unit": "unitLengthCm"
+            }
+          },
+          "identifier": "1",
+          "name": "1640274976437653505",
+          "createTime": ISODate("2023-03-27T08:19:15.792Z")
+        }
+      ],
+      "identifier": "40",
+      "name": "1640274978476085249",
+      "createTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "updateTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "createBy": "yimin.du/杜一民",
+      "updateBy": "yimin.du/杜一民"
+    },
+    {
+      "callType": "sync",
+      "inputData": [
+        {
+          "dataType": {
+            "type": "int",
+            "specs": {
+              "min": NumberInt("0"),
+              "max": NumberInt("9999"),
+              "step": NumberInt("1"),
+              "unitType": "unitLength",
+              "unitName": "厘米",
+              "unit": "unitLengthCm"
+            }
+          },
+          "identifier": "1",
+          "name": "1640274976450236417",
+          "createTime": ISODate("2023-03-27T08:20:47.917Z")
+        }
+      ],
+      "outputData": [
+        {
+          "dataType": {
+            "type": "int",
+            "specs": {
+              "min": NumberInt("0"),
+              "max": NumberInt("9999"),
+              "step": NumberInt("1"),
+              "unitType": "unitLength",
+              "unitName": "厘米",
+              "unit": "unitLengthCm"
+            }
+          },
+          "identifier": "1",
+          "name": "1640274976437653505",
+          "createTime": ISODate("2023-03-27T08:20:47.917Z")
+        }
+      ],
+      "identifier": "41",
+      "name": "1640274978601914369",
+      "createTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "updateTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "createBy": "yimin.du/杜一民",
+      "updateBy": "yimin.du/杜一民"
+    },
+    {
+      "callType": "async",
+      "inputData": [
+        {
+          "dataType": {
+            "type": "bool",
+            "specs": {
+              "0": NumberLong("1640274978643857410"),
+              "1": NumberLong("1640274978673217537")
+            }
+          },
+          "identifier": "1",
+          "name": "1640274977414926337",
+          "createTime": ISODate("2023-03-27T08:21:38.156Z")
+        }
+      ],
+      "outputData": [
+        {
+          "dataType": {
+            "type": "bool",
+            "specs": {
+              "0": NumberLong("1640274978664828929"),
+              "1": NumberLong("1640274978685800450")
+            }
+          },
+          "identifier": "2",
+          "name": "1640274978014711809",
+          "createTime": ISODate("2023-03-27T08:21:38.156Z")
+        }
+      ],
+      "identifier": "42",
+      "name": "1640274978069237761",
+      "createTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "updateTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "createBy": "yimin.du/杜一民",
+      "updateBy": "yimin.du/杜一民"
+    },
+    {
+      "callType": "sync",
+      "inputData": [
+        {
+          "dataType": {
+            "type": "int",
+            "specs": {
+              "min": NumberInt("0"),
+              "max": NumberInt("9999"),
+              "step": NumberInt("1"),
+              "unitType": "unitLength",
+              "unitName": "厘米",
+              "unit": "unitLengthCm"
+            }
+          },
+          "identifier": "1",
+          "name": "1640274976450236417",
+          "createTime": ISODate("2023-03-27T08:22:42.954Z")
+        }
+      ],
+      "outputData": [
+        {
+          "dataType": {
+            "type": "int",
+            "specs": {
+              "min": NumberInt("0"),
+              "max": NumberInt("9999"),
+              "step": NumberInt("1"),
+              "unitType": "unitLength",
+              "unitName": "厘米",
+              "unit": "unitLengthCm"
+            }
+          },
+          "identifier": "1",
+          "name": "1640274976437653505",
+          "createTime": ISODate("2023-03-27T08:22:42.954Z")
+        }
+      ],
+      "identifier": "43",
+      "name": "1640274978199261185",
+      "createTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "updateTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "createBy": "yimin.du/杜一民",
+      "updateBy": "yimin.du/杜一民"
+    },
+    {
+      "callType": "sync",
+      "inputData": [
+        {
+          "dataType": {
+            "type": "int",
+            "specs": {
+              "min": NumberInt("0"),
+              "max": NumberInt("9999"),
+              "step": NumberInt("1"),
+              "unitType": "unitTime",
+              "unitName": "分",
+              "unit": "unitTimeMinute"
+            }
+          },
+          "identifier": "1",
+          "name": "1640274976450236417",
+          "createTime": ISODate("2023-03-27T08:23:27.415Z")
+        }
+      ],
+      "outputData": [
+        {
+          "dataType": {
+            "type": "int",
+            "specs": {
+              "min": NumberInt("0"),
+              "max": NumberInt("9999"),
+              "step": NumberInt("1"),
+              "unitType": "unitTime",
+              "unitName": "分",
+              "unit": "unitTimeMinute"
+            }
+          },
+          "identifier": "1",
+          "name": "1640274976437653505",
+          "createTime": ISODate("2023-03-27T08:23:27.415Z")
+        }
+      ],
+      "identifier": "44",
+      "name": "1640274977683361793",
+      "createTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "updateTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "createBy": "yimin.du/杜一民",
+      "updateBy": "yimin.du/杜一民"
+    },
+    {
+      "callType": "async",
+      "inputData": [
+        {
+          "dataType": {
+            "type": "enum",
+            "specs": {
+              "0": NumberLong("1640274978643857410"),
+              "1": NumberLong("1640274978673217537"),
+              "2": NumberLong("1640274978518028289"),
+              "3": NumberLong("1640274978157318146")
+            }
+          },
+          "identifier": "1",
+          "name": "1640274977716916225",
+          "createTime": ISODate("2023-03-27T08:24:56.139Z")
+        }
+      ],
+      "outputData": [
+        {
+          "dataType": {
+            "type": "enum",
+            "specs": {
+              "0": NumberLong("1640274978664828929"),
+              "1": NumberLong("1640274978685800450"),
+              "2": NumberLong("1640274978434142209"),
+              "3": NumberLong("1640274978413170690")
+            }
+          },
+          "identifier": "2",
+          "name": "1640274976685117442",
+          "createTime": ISODate("2023-03-27T08:24:56.139Z")
+        }
+      ],
+      "identifier": "45",
+      "name": "1640274976806752257",
+      "createTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "updateTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "createBy": "yimin.du/杜一民",
+      "updateBy": "yimin.du/杜一民"
+    },
+    {
+      "callType": "sync",
+      "inputData": [
+        {
+          "dataType": {
+            "type": "enum",
+            "specs": {
+              "0": NumberLong("1640274978643857410"),
+              "1": NumberLong("1640274978673217537"),
+              "2": NumberLong("1640274978518028289")
+            }
+          },
+          "identifier": "1",
+          "name": "1640274976450236417",
+          "createTime": ISODate("2023-03-27T08:26:15.545Z")
+        }
+      ],
+      "outputData": [
+        {
+          "dataType": {
+            "type": "enum",
+            "specs": {
+              "0": NumberLong("1640274978664828929"),
+              "1": NumberLong("1640274978685800450"),
+              "2": NumberLong("1640274978434142209")
+            }
+          },
+          "identifier": "1",
+          "name": "1640274976437653505",
+          "createTime": ISODate("2023-03-27T08:26:15.545Z")
+        }
+      ],
+      "identifier": "46",
+      "name": "1640274978429947906",
+      "createTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "updateTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "createBy": "yimin.du/杜一民",
+      "updateBy": "yimin.du/杜一民"
+    },
+    {
+      "callType": "sync",
+      "inputData": [
+        {
+          "dataType": {
+            "type": "bool",
+            "specs": {
+              "0": NumberLong("1640274978643857410"),
+              "1": NumberLong("1640274978673217537")
+            }
+          },
+          "identifier": "1",
+          "name": "1640274976798363649",
+          "createTime": ISODate("2023-03-27T08:26:58.801Z")
+        }
+      ],
+      "outputData": [
+        {
+          "dataType": {
+            "type": "bool",
+            "specs": {
+              "0": NumberLong("1640274978664828929"),
+              "1": NumberLong("1640274978685800450")
+            }
+          },
+          "identifier": "1",
+          "name": "1640274976437653505",
+          "createTime": ISODate("2023-03-27T08:26:58.801Z")
+        }
+      ],
+      "identifier": "47",
+      "name": "1640274977104547841",
+      "createTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "updateTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "createBy": "yimin.du/杜一民",
+      "updateBy": "yimin.du/杜一民"
+    },
+    {
+      "callType": "sync",
+      "inputData": [
+        {
+          "dataType": {
+            "type": "String"
+          },
+          "identifier": "1",
+          "name": "1640274976450236417",
+          "createTime": ISODate("2023-03-27T08:27:26.208Z")
+        }
+      ],
+      "outputData": [
+        {
+          "dataType": {
+            "type": "String"
+          },
+          "identifier": "1",
+          "name": "1640274976437653505",
+          "createTime": ISODate("2023-03-27T08:27:26.208Z")
+        }
+      ],
+      "identifier": "48",
+      "name": "1640274978635468801",
+      "createTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "updateTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "createBy": "yimin.du/杜一民",
+      "updateBy": "yimin.du/杜一民"
+    },
+    {
+      "callType": "async",
+      "inputData": [
+        {
+          "dataType": {
+            "type": "String"
+          },
+          "identifier": "1",
+          "name": "1640274978232815618",
+          "createTime": ISODate("2023-03-27T08:27:56.517Z")
+        }
+      ],
+      "outputData": [
+        {
+          "dataType": {
+            "type": "String"
+          },
+          "identifier": "2",
+          "name": "1640274978257981442",
+          "createTime": ISODate("2023-03-27T08:27:56.517Z")
+        }
+      ],
+      "identifier": "49",
+      "name": "1640274978077626370",
+      "createTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "updateTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "createBy": "yimin.du/杜一民",
+      "updateBy": "yimin.du/杜一民"
+    },
+    {
+      "callType": "sync",
+      "inputData": [
+        {
+          "dataType": {
+            "type": "enum",
+            "specs": {
+              "0": NumberLong("1640274978643857410"),
+              "1": NumberLong("1640274978673217537"),
+              "2": NumberLong("1640274978518028289"),
+              "3": NumberLong("1640274978157318146")
+            }
+          },
+          "identifier": "1",
+          "name": "1640274978165706753",
+          "createTime": ISODate("2023-03-27T08:29:10.573Z")
+        }
+      ],
+      "outputData": [
+        {
+          "dataType": {
+            "type": "enum",
+            "specs": {
+              "0": NumberLong("1640274978664828929"),
+              "1": NumberLong("1640274978685800450"),
+              "2": NumberLong("1640274978434142209"),
+              "3": NumberLong("1640274978413170690")
+            }
+          },
+          "identifier": "1",
+          "name": "1640274976437653505",
+          "createTime": ISODate("2023-03-27T08:29:10.573Z")
+        }
+      ],
+      "identifier": "50",
+      "name": "1640274978404782082",
+      "createTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "updateTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "createBy": "yimin.du/杜一民",
+      "updateBy": "yimin.du/杜一民"
+    },
+    {
+      "callType": "sync",
+      "inputData": [
+        {
+          "dataType": {
+            "type": "bool",
+            "specs": {
+              "0": NumberLong("1640274978643857410"),
+              "1": NumberLong("1640274978673217537")
+            }
+          },
+          "identifier": "1",
+          "name": "1640274976915804161",
+          "createTime": ISODate("2023-03-27T08:29:57.749Z")
+        }
+      ],
+      "outputData": [
+        {
+          "dataType": {
+            "type": "bool",
+            "specs": {
+              "0": NumberLong("1640274978664828929"),
+              "1": NumberLong("1640274978685800450")
+            }
+          },
+          "identifier": "2",
+          "name": "1640274978174095362",
+          "createTime": ISODate("2023-03-27T08:29:57.749Z")
+        }
+      ],
+      "identifier": "51",
+      "name": "1640274978576748546",
+      "createTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "updateTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "createBy": "yimin.du/杜一民",
+      "updateBy": "yimin.du/杜一民"
+    },
+    {
+      "callType": "sync",
+      "inputData": [
+        {
+          "dataType": {
+            "type": "int",
+            "specs": {
+              "min": NumberInt("0"),
+              "max": NumberInt("9999"),
+              "step": NumberInt("1"),
+              "unitType": "unitTime",
+              "unitName": "分",
+              "unit": "unitTimeMinute"
+            }
+          },
+          "identifier": "1",
+          "name": "1640274976450236417",
+          "createTime": ISODate("2023-03-27T08:30:50.261Z")
+        }
+      ],
+      "outputData": [
+        {
+          "dataType": {
+            "type": "int",
+            "specs": {
+              "min": NumberInt("0"),
+              "max": NumberInt("9999"),
+              "step": NumberInt("1"),
+              "unitType": "unitTime",
+              "unitName": "分",
+              "unit": "unitTimeMinute"
+            }
+          },
+          "identifier": "1",
+          "name": "1640274976437653505",
+          "createTime": ISODate("2023-03-27T08:30:50.261Z")
+        }
+      ],
+      "identifier": "52",
+      "name": "1640274977821773825",
+      "createTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "updateTime": ISODate("2023-03-27T08:50:05.094Z"),
+      "createBy": "yimin.du/杜一民",
+      "updateBy": "yimin.du/杜一民"
+    }
+  ],
+  "_class": "com.chervon.iot.middle.api.pojo.thingmodel.IotThingModel"
+}
