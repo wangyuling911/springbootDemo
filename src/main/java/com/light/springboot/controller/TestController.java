@@ -59,21 +59,23 @@ public class TestController {
 
 	public static void main(String[] args) {
 		try {
-			String secret = "my-secret-key";
+			String secret = "app-hmac-secret-key";
 			String message = "POST\n" +
 					"/app-hmac/user/get/encrypt/secret\n" +
 					"\n" +
-					"user-key\n" +
-					"Wed, 22 Mar 2023 07:51:58 GMT\n" +
-					"User-Agent:PostmanRuntime/7.31.3\n";
+					"app-hmac\n" +
+					"Thu, 04 May 2023 08:21:45 GMT\n" +
+					"User-Agent:ChervonIot/0.0.4 (iPhone; iOS 16.2; Scale/3.00)\n";
 
-			String message2 = "{\"email\": \"1134344850@qq.com\"}";
+			String message2 = "";
+
+			String message3 = "abcdef";
 
 
 			Mac hasher = Mac.getInstance("HmacSHA256");
 			hasher.init(new SecretKeySpec(secret.getBytes(), "HmacSHA256"));
 
-			byte[] hash = hasher.doFinal(message2.getBytes());
+			byte[] hash = hasher.doFinal(message.getBytes());
 
 			// to lowercase hexits
 			String s = DatatypeConverter.printHexBinary(hash);
