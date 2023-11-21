@@ -3,8 +3,9 @@ package com.light.springboot.controller;
 import com.google.common.collect.Lists;
 import com.light.springboot.service.JDBCService;
 import com.light.springboot.service.TestEvent;
+import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
-import lombok.var;
+import org.semver4j.Semver;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.context.event.EventListener;
@@ -19,10 +20,12 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
+import java.util.regex.Pattern;
 
 @RestController
 @Slf4j
 public class TestController {
+
 
     @Autowired
     JDBCService jdbcService;
@@ -37,6 +40,7 @@ public class TestController {
         return "beijign";
     }
 
+    @SneakyThrows
     @GetMapping("/helloworld2")
     public String helloworld2() {
         System.out.println("开始");
@@ -46,9 +50,61 @@ public class TestController {
         return "beijign";
     }
 
-    public static void main(String[] args) throws ClassNotFoundException {
-        HashMap<Object, Object> map = new HashMap<>();
-        map.put("11","222");
+//    public static void main(String[] args) throws ClassNotFoundException {
+//
+//        String number = "997";
+//        int digits = 5;
+//        char paddingChar = '0';
+//
+//        String paddedNumber = String.format("%" + digits + "s", number).replace(' ', paddingChar);
+//        System.out.println(paddedNumber);
+//
+//
+////
+////        String str = "0009050";
+////        String prefix = "0";
+////
+////        Pattern pattern = Pattern.compile("^" + Pattern.quote(prefix) + "+");
+////        String result = pattern.matcher(str).replaceFirst("");
+////        System.out.println(result);
+//
+//    }
+    public static void main(String[] args) {
+        boolean valid = Semver.isValid("a.0.0");
+
+
+        System.out.println(valid);
+
+
+
+    }
+
+
+
+//        /**
+//     * 去"0"
+//     *
+//     * @param LongVersion
+//     * @return
+//     */
+//    private String getShortVersion(String LongVersion) {
+//        Pattern pattern = Pattern.compile("^" + Pattern.quote(COVERING) + "+");
+//        String[] split = LongVersion.split("\\.");
+//        StringBuilder stringBuilder = new StringBuilder();
+//        for (int i = 0; i < split.length; i++) {
+//            stringBuilder.append(pattern.matcher(LongVersion).replaceFirst(""));
+//        }
+//        //todo 最后一位要也是0那
+//        return stringBuilder.toString();
+//    }
+
+    public static int maxSubArray(int[] nums) {
+        int pre = 0, maxAns = nums[0];
+        for (int x : nums) {
+            pre = Math.max(pre + x, x);
+            maxAns = Math.max(maxAns, pre);
+        }
+        return maxAns;
     }
 
     @GetMapping("/helloworld3")
@@ -56,6 +112,7 @@ public class TestController {
         testxiancheng();
         return "成功";
     }
+
 
     @GetMapping("/helloworld4")
     public String helloworld4() throws ClassNotFoundException, InterruptedException {
@@ -92,11 +149,10 @@ public class TestController {
     }
 
 
-
     @EventListener
     public void optionBaseEvent(TestEvent event) {
         System.out.println("EventListener");
-        var var = "wang";
+
 
     }
 
